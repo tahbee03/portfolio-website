@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="This website is a portfolio of work done by Talike Bennett"/>
+        <link rel="stylesheet" href="/static/styles/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+        <title>Talike's Portfolio</title>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="left-bar">
+                <a href="{{ url_for('home') }}">
+                    <p><b>Talike's Portfolio</b></p>
+                </a>
+            </div>
+            <div class="right-bar">
+                <p>
+                    <!-- TODO: Create HTML files for the other pages and link them here. -->
+                    <a href="{{ url_for('about_me') }}" class="link l1">About Me</a> |
+                    <a href="{{ url_for('mc') }}" class="link l2">Mini Comics</a> |
+                    <a href="{{ url_for('projects') }}" class="link l3">Projects</a> |
+                    <a href="{{ url_for('art') }}" class="link l4">Art</a> |
+                    <a href="{{ url_for('contact') }}" class="link l5">Contact</a>
+                </p>
+            </div>
+        </div> 
+        {% block content %}{% endblock %}
+    </body>
+</html>
