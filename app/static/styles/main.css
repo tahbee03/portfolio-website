@@ -1,7 +1,15 @@
-div {
-    margin: auto;
+body {
     text-align: center;
-    display: inline-block;
+}
+
+div, nav {
+    /* margin: auto; */
+    /* display: inline-block; */
     width: 100%;
     /* color: pink; */
+}
+
+img {
+    margin: 20px;
+    width: 300px;
 }
