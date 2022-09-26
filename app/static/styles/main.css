@@ -1,15 +1,60 @@
 body {
     text-align: center;
+    font-family: Manrope, serif;
+    background-color: #C7BDBD;
 }
 
-div, nav {
-    /* margin: auto; */
-    /* display: inline-block; */
-    width: 100%;
-    /* color: pink; */
+p {
+    font-size: 20px;
+}
+
+.nav-bar {
+    /* border-style: solid;
+    border-color: red;
+    border-width: 5px; */
+    /* display: block; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #998888;
+}
+
+.left-bar, .right-bar {
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 2px; */
+    /* width: 50%; */
+    /* float: left; */
+    margin: 5px;
+    /* vertical-align: middle;
+    line-height: 30px; */
+}
+
+.left-bar {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.right-bar {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* TODO: Remove underline from links and change color. */
+.link {
+    margin-left: 30px;
+}
+
+.l1, .l2, .l3, .l4 {
+    margin-right: 30px;
+}
+
+.title {
+    font-size: 150px;
+    margin: 25px;
 }
 
 img {
-    margin: 20px;
-    width: 300px;
+    margin: 5px;
+    width: 250px;
 }
