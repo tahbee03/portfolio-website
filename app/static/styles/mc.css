@@ -1,0 +1,40 @@
+/* .img-grid {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #998888;
+} */
+
+/* TODO: Clean up the MC grid and make it more responsive. */
+.row {
+    /* border-style: solid;
+    border-color: red;
+    border-width: 5px; */
+    /* display: block; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #998888;
+}
+
+.cell {
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 5px; */
+    aspect-ratio: 1/ 1;
+    /* display: flex; */
+    align-items: center;
+    margin: 5%;
+}
+  
+.cell img {
+    /* width: 100%;
+    height: 100%;
+    object-fit: contain; */
+    object-position: center;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.25);
+}

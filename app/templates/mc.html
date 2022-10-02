@@ -1,5 +1,22 @@
 {% extends 'index.html' %}
 
+{% block links %}
+<link rel="stylesheet" href="/static/styles/mc.css">
+{% endblock %}
+
 {% block content %}
 <h1 class="title">MINI COMICS</h1>
+<div class="img-grid">
+    <div class="row">
+        <div class="cell">
+            <img src="/static/img/MC1.png" alt="mc1">
+        </div>
+        <div class="cell">
+            <img src="/static/img/MC2.png" alt="mc2">
+        </div>
+        <div class="cell">
+            <img src="/static/img/MC3.png" alt="mc3">
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -5,7 +5,7 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav-bar {
@@ -13,7 +13,7 @@ p {
     border-color: red;
     border-width: 5px; */
     /* display: block; */
-    padding: 10px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #998888;
@@ -32,21 +32,21 @@ p {
 
 .left-bar {
     text-align: left;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .right-bar {
     text-align: right;
-    padding-right: 20px;
+    padding-right: 15px;
 }
 
 /* TODO: Remove underline from links and change color. */
 .link {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .l1, .l2, .l3, .l4 {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .title {
