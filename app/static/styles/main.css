@@ -10,6 +10,26 @@ p {
     display: inline;
 }
 
+/* 
+    HELPFUL LINK:
+    CSS Links (w3schools): https://www.w3schools.com/css/css_link.asp
+*/
+/* a {
+    color: black;
+} */
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    color: black;
+}
+
+a:hover {
+    color: #404040;
+}
+
 .nav-bar {
     padding: 5px;
     display: grid;
