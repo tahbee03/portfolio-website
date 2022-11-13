@@ -1,40 +1,30 @@
-/* .img-grid {
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #998888;
-} */
-
-/* TODO: Clean up the MC grid and make it more responsive. */
 .row {
-    /* border-style: solid;
-    border-color: red;
-    border-width: 5px; */
-    /* display: block; */
     padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     background-color: #998888;
 }
 
-.cell {
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 5px; */
-    aspect-ratio: 1/ 1;
-    /* display: flex; */
-    align-items: center;
-    margin: 5%;
-}
-  
-.cell img {
-    /* width: 100%;
-    height: 100%;
-    object-fit: contain; */
+.col-lg-4 img, .col-sm-6 img, .col-12 img {
     object-position: center;
     transition: 0.3s;
+    margin: 0px;
 }
 
-img:hover {
+.col-lg-4 img:hover, .col-sm-6 img:hover, .col-12 img:hover {
     transform: scale(1.25);
+}
+
+.btn {
+    border-width: 0px;
+    width: fit-content;
+    padding: 0px;
+}
+
+.modal-body {
+    background-color: #C7BDBD;
+}
+
+.carousel-inner img {
+    margin: auto;
+    padding-left: 75px;
+    padding-right: 75px;
 }
