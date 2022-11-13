@@ -4,6 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="description" content="This website is a portfolio of work done by Talike Bennett"/>
         <title>Talike's Portfolio</title>
+        <link rel='icon' href='/static/img/code_pfp_circ.png' type='image/x-icon'/>
 
         <!-- Bootstrap CSS -->
         <link 
@@ -25,15 +26,15 @@
                 </a>
             </div>
             <div class="right-bar">
-                <a href="{{ url_for('about_me') }}" class="link l1"><p>About Me</p></a>
+                <a href="{{ url_for('about_me') }}" class="l1"><p>About Me</p></a>
                 |
-                <a href="{{ url_for('mc') }}" class="link l2"><p>Mini Comics</p></a>
+                <a href="{{ url_for('mc') }}" class="l2"><p>Mini Comics</p></a>
                 |
-                <a href="{{ url_for('projects') }}" class="link l3"><p>Projects</p></a>
+                <a href="{{ url_for('projects') }}" class="l3"><p>Projects</p></a>
                 |
-                <a href="{{ url_for('art') }}" class="link l4"><p>Art</p></a>
+                <a href="{{ url_for('art') }}" class="l4"><p>Art</p></a>
                 |
-                <a href="{{ url_for('contact') }}" class="link l5"><p>Contact</p></a>
+                <a href="{{ url_for('contact') }}" class="l5"><p>Contact</p></a>
             </div>
         </div> 
         {% block content %}{% endblock %}

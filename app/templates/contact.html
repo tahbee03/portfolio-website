@@ -1,5 +1,42 @@
 {% extends 'index.html' %}
 
+{% block links %}
+<link rel="stylesheet" href="/static/styles/contact.css">
+{% endblock %}
+
 {% block content %}
 <h1 class="title">CONTACT</h1>
+
+<!-- 
+    HELPFUL LINK:
+    Icons (Flaticon): https://www.flaticon.com/
+-->
+<div class="container">
+    <div class="row">
+        <div class="col popout-icon">
+            <a href="https://www.linkedin.com/in/talikebennett/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png" alt="linkedin">
+            </a>
+        </div>
+        <div class="col popout-icon">
+            <a href="https://github.com/TahBee03" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github">
+            </a>
+        </div>
+        <div class="col popout-icon">
+            <a href="https://www.instagram.com/boy_dejoi/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram">
+            </a>
+        </div>
+        <div class="col popout-icon">
+            <a href="mailto:talikeb20@gmail.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/60/60543.png" alt="gmail">
+            </a>
+        </div>
+        <div class="col reveal-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968759.png" alt="discord">
+            <!-- <p>TDB #8730</p> -->
+        </div>
+    </div>
+</div>
 {% endblock %}

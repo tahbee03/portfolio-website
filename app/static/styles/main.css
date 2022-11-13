@@ -10,14 +10,16 @@ p {
     display: inline;
 }
 
+.loading-text {
+    color: red;
+    background-color: rgb(255, 193, 193);
+    padding: 15px;
+}
+
 /* 
     HELPFUL LINK:
     CSS Links (w3schools): https://www.w3schools.com/css/css_link.asp
 */
-/* a {
-    color: black;
-} */
-
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
@@ -28,6 +30,14 @@ a:link, a:visited, a:active {
 
 a:hover {
     color: #404040;
+}
+
+.l1, .l2, .l3, .l4, .l5 {
+    margin-left: 20px;
+}
+
+.l1, .l2, .l3, .l4 {
+    margin-right: 20px;
 }
 
 .nav-bar {
@@ -49,15 +59,6 @@ a:hover {
 .right-bar {
     text-align: right;
     padding-right: 15px;
-}
-
-/* TODO: Remove underline from links and change color. */
-.link {
-    margin-left: 20px;
-}
-
-.l1, .l2, .l3, .l4 {
-    margin-right: 20px;
 }
 
 .title {

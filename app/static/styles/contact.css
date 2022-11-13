@@ -1,0 +1,23 @@
+img {
+    width: 100px;
+}
+
+.popout-icon img {
+    transition: 0.3s;
+}
+
+.popout-icon img:hover {
+    transform: scale(1.25);
+}
+
+/* TODO: Find a way to have Discord username appear when hovering over Discord icon */
+/* .reveal-icon p {
+    transform: translate(0px, -75px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.reveal-icon img:hover p {
+    transform: translate(0px, -15px);
+    opacity: 1;
+} */
