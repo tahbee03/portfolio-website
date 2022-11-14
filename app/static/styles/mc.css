@@ -1,6 +1,11 @@
+.container {
+    padding: 20px;
+    background-color: #998888;
+    border-radius: 15px;
+}
+
 .row {
     padding: 5px;
-    background-color: #998888;
 }
 
 .col-lg-4 img, .col-sm-6 img, .col-12 img {

@@ -14,6 +14,7 @@ p {
     color: red;
     background-color: rgb(255, 193, 193);
     padding: 15px;
+    border-radius: 15px;
 }
 
 /* 
@@ -69,4 +70,5 @@ a:hover {
 img {
     margin: 5px;
     width: 250px;
+    border-radius: 15px;
 }
