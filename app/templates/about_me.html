@@ -1,9 +1,62 @@
 {% extends 'index.html' %}
 
+{% block head %}
+<link rel="stylesheet" href="/static/styles/about_me.css">
+{% endblock %}
+
 {% block content %}
 <h1 class="title">ABOUT ME</h1>
-<p>
-    Hi! My name is Talike Bennett.
-</p>
-<!-- TODO: Complete brief bio. -->
+
+<div class="container">
+    <p>
+        Hello! My name is Talike (pronounced tah-leek), and I am working towards being a full-stack software 
+        engineer. I have dreamed of being a video game developer for years now, but I have decided to work more 
+        towards creating software for both mobile devices and computers. I have experience with a handful of 
+        programming languages including C++ and Python. I hope to use these languages (as well as the ones I will 
+        learn in the future) and my problem-solving skills to create and/or improve software that users will find 
+        efficient, visually appealing, and -- if applicable -- entertaining to engage with.
+    </p>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="row">
+            <div class="col-3">
+                <img src="/static/img/placeholder.jpg" class="img-fluid rounded-start" alt="exp1">
+            </div>
+            <div class="col-9 text-start d-flex align-items-center">
+                <div class="card-body">
+                    <h2 class="card-title">Experience 1</h2>
+                    <p class="card-text">Description 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="row">
+            <div class="col-3">
+                <img src="/static/img/placeholder.jpg" class="img-fluid rounded-start" alt="exp2">
+            </div>
+            <div class="col-9 text-start d-flex align-items-center">
+                <div class="card-body">
+                    <h2 class="card-title">Experience 2</h2>
+                    <p class="card-text">Description 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="row">
+            <div class="col-3">
+                <img src="/static/img/placeholder.jpg" class="img-fluid rounded-start" alt="exp3">
+            </div>
+            <div class="col-9 text-start d-flex align-items-center">
+                <div class="card-body">
+                    <h2 class="card-title">Experience 3</h2>
+                    <p class="card-text">Description 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

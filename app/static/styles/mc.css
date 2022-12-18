@@ -33,3 +33,9 @@
     padding-left: 75px;
     padding-right: 75px;
 }
+
+img {
+    margin: 5px;
+    width: 250px;
+    border-radius: 15px;
+}
