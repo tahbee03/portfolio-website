@@ -4,6 +4,12 @@ body {
     background-color: #C7BDBD;
 }
 
+.navbar {
+    padding: 15px;
+    background-color: #998888;
+    box-shadow: 0 2px 4px 0 black;
+}
+
 p {
     font-size: 15px;
     width: fit-content;
@@ -39,27 +45,6 @@ a:hover {
 
 .l1, .l2, .l3, .l4 {
     margin-right: 20px;
-}
-
-.nav-bar {
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #998888;
-}
-
-.left-bar, .right-bar {
-    margin: 5px;
-}
-
-.left-bar {
-    text-align: left;
-    padding-left: 15px;
-}
-
-.right-bar {
-    text-align: right;
-    padding-right: 15px;
 }
 
 .title {

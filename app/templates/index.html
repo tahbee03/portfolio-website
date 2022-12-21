@@ -19,24 +19,18 @@
         {% block head %}{% endblock %}
     </head>
     <body>
-        <div class="nav-bar">
-            <div class="left-bar">
-                <a href="{{ url_for('home') }}">
-                    <p><b>Talike's Portfolio</b></p>
-                </a>
+        <nav class="navbar sticky-top">
+            <div class="container-fluid">
+                <a href="{{ url_for('home') }}"><p><b>Talike's Portfolio</b></p></a>
+                <nav class="nav">
+                    <a href="{{ url_for('about_me') }}" class="l1"><p>About Me</p></a>
+                    <a href="{{ url_for('mc') }}" class="l2"><p>Mini Comics</p></a>
+                    <a href="{{ url_for('projects') }}" class="l3"><p>Projects</p></a>
+                    <a href="{{ url_for('art') }}" class="l4"><p>Art</p></a>
+                    <a href="{{ url_for('contact') }}" class="l5"><p>Contact</p></a>
+                </nav>
             </div>
-            <div class="right-bar">
-                <a href="{{ url_for('about_me') }}" class="l1"><p>About Me</p></a>
-                |
-                <a href="{{ url_for('mc') }}" class="l2"><p>Mini Comics</p></a>
-                |
-                <a href="{{ url_for('projects') }}" class="l3"><p>Projects</p></a>
-                |
-                <a href="{{ url_for('art') }}" class="l4"><p>Art</p></a>
-                |
-                <a href="{{ url_for('contact') }}" class="l5"><p>Contact</p></a>
-            </div>
-        </div> 
+        </nav>
         {% block content %}{% endblock %}
 
         <!-- Bootstrap JS + Popper -->
