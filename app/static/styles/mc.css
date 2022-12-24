@@ -1,6 +1,6 @@
 .container {
-    padding: 20px;
-    background-color: #998888;
+    padding: 30px;
+    background-color: #201335;
     border-radius: 15px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .modal-body {
-    background-color: #C7BDBD;
+    background-color: #4f4789;
 }
 
 .carousel-inner img {
