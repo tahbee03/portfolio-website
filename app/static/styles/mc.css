@@ -1,26 +1,25 @@
 .container {
-    padding: 30px;
     background-color: #201335;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.row, .col-lg-4, .col-12 {
+    padding: 15px;
+}
+
+.comic {
+    transition: 0.3s;
+    max-width: 75%;
     border-radius: 15px;
 }
 
-.row {
-    padding: 5px;
-}
-
-.col-lg-4 img, .col-sm-6 img, .col-12 img {
-    object-position: center;
-    transition: 0.3s;
-    margin: 0px;
-}
-
-.col-lg-4 img:hover, .col-sm-6 img:hover, .col-12 img:hover {
+.comic:hover {
     transform: scale(1.25);
 }
 
 .btn {
     border-width: 0px;
-    width: fit-content;
     padding: 0px;
 }
 
@@ -32,10 +31,4 @@
     margin: auto;
     padding-left: 75px;
     padding-right: 75px;
-}
-
-img {
-    margin: 5px;
-    width: 250px;
-    border-radius: 15px;
 }
