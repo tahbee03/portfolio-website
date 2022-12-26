@@ -7,7 +7,7 @@
 {% block content %}
 <h1 class="title">ABOUT ME</h1>
 
-<div class="container">
+<div class="container" id="bio">
     <div class="row">
         <div class="col-6">
             <img src="/static/img/talike1.jpg" alt="talike" class="img-fluid" id="pfp">
@@ -26,8 +26,7 @@
 </div>
 
 <div class="container">
-    <!-- TODO: Once database is set up, find a way to store experiences into a table and fetch the
-    content here. -->
+    <!-- TODO: Once database is set up, find a way to store experiences into a table and fetch the content here. -->
     <div class="card">
         <div class="row">
             <div class="col-md-3 col-12 d-flex align-items-center justify-content-center">
@@ -295,4 +294,25 @@
         </div>
     </div>
 </div>
+
+<script>
+    /*
+    HELPFUL RESOURCES:
+    https://codepen.io/bstonedev/pen/MWWZgKz
+    https://www.w3schools.com/jsref/met_document_addeventlistener.asp
+    https://www.w3schools.com/jsref/met_element_getboundingclientrect.asp
+    https://www.w3schools.com/jsref/prop_win_innerheight.asp
+    https://www.w3schools.com/jsref/prop_element_classlist.asp
+    */
+    let elements = document.querySelectorAll(".card");
+    window.addEventListener('scroll', () => {
+        for(var i = 0; i < elements.length; i++) {
+            var elem = elements[i];
+            var dist = elem.getBoundingClientRect().top - window.innerHeight + 50;
+
+            if(dist < 0) elem.classList.add("in-view");
+            else elem.classList.remove("in-view");
+        }
+    });
+</script>
 {% endblock %}

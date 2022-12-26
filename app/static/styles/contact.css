@@ -2,23 +2,27 @@ img {
     width: 100px;
 }
 
-.popout-icon img {
+.popout-icon {
     transition: 0.3s;
 }
 
-.popout-icon img:hover {
+.popout-icon:hover {
     transform: scale(1.25);
 }
 
-/* TODO: Find a way to have Discord username appear when hovering over Discord icon */
-/* .reveal-icon p {
-    transform: translate(0px, -75px);
-    opacity: 0;
+/*
+HELPFUL LINKS:
+https://www.w3schools.com/cssref/css_selectors.php
+https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered
+*/
+p {
     transition: 0.3s;
+    opacity: 0;
+    transform: translateY(-10px);
 }
 
-.reveal-icon img:hover p {
-    transform: translate(0px, -15px);
+.reveal-icon:hover + p {
     opacity: 1;
-} */
+    transform: translateY(0px);
+}
 
