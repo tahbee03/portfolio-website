@@ -15,14 +15,22 @@ HELPFUL LINKS:
 https://www.w3schools.com/cssref/css_selectors.php
 https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered
 */
-p {
+.reveal-icon {
+    transform: translateY(12px);
     transition: 0.3s;
+}
+
+p {
+    margin: 0px;
     opacity: 0;
-    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.reveal-icon:hover {
+    transform: translateY(0px);
 }
 
 .reveal-icon:hover + p {
     opacity: 1;
-    transform: translateY(0px);
 }
 
