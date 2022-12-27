@@ -1,5 +1,46 @@
-img {
-    margin: 5px;
-    width: 250px;
-    border-radius: 15px;
+.row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.light-block {
+    background-color: #fce762;
+}
+
+.dark-block {
+    background-color: #201335;
+}
+
+.col-6 {
+    padding: 0px;
+    height: 300px;
+}
+
+.div-link-left {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #ebebeb;
+}
+
+.div-link-left:hover {
+    transform: scale(0.9);
+    color: #ebebeb;
+}
+
+.div-link-right {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #1f1f1f;
+}
+
+.div-link-right:hover {
+    transform: scale(0.9);
+    color: #1f1f1f;
+}
+
+.div-link-left > div, .div-link-right > div {
+    padding-left: 25px;
+    padding-right: 25px;
 }

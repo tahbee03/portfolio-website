@@ -5,7 +5,73 @@
 {% endblock %}
 
 {% block content %}
-<h1 class="title">TALIKE</h1>
-<img src="/static/img/code_pfp.png" alt="pfp">
-<!-- TODO: Replace the single image with a carousel of images and add more interesting content -->
+<h1 class="title">TALIKE BENNETT</h1>
+
+<div class="container">
+    <div class="row dark-block">
+        <div class="col-6 d-flex align-items-center">
+            <a class="div-link-left" href="{{ url_for('about_me') }}">
+                <div>
+                    <h2>ABOUT ME</h2>
+                    <p>Click this to go to the About Me page.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 d-flex align-items-center">
+            <img class="img-fluid" src="/static/img/talike1.jpg">
+        </div>
+    </div>
+    <div class="row light-block">
+        <div class="col-6 d-flex align-items-center">
+            <img class="img-fluid" src="/static/img/MC1_1.png">
+        </div>
+        <div class="dark-text col-6 d-flex align-items-center">
+            <a class="div-link-right" href="{{ url_for('mc') }}">
+                <div>
+                    <h2>MINI COMICS</h2>
+                    <p>Click this to go to the Mini Comics page.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row dark-block">
+        <div class="light-text col-6 d-flex align-items-center">
+            <a class="div-link-left" href="{{ url_for('projects') }}">
+                <div>
+                    <h2>PROJECTS</h2>
+                    <p>Click this to go to the Projects page.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 d-flex align-items-center">
+            <img class="img-fluid" src="/static/img/code_pfp.png">
+        </div>
+    </div>
+    <div class="row light-block">
+        <div class="col-6 d-flex align-items-center">
+            <img class="img-fluid" src="/static/img/placeholder.jpg">
+        </div>
+        <div class="dark-text col-6 d-flex align-items-center">
+            <a class="div-link-right" href="{{ url_for('art') }}">
+                <div>
+                    <h2>ART</h2>
+                    <p>Click this to go to the Art page.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row dark-block">
+        <div class="light-text col-6 d-flex align-items-center">
+            <a class="div-link-left" href="{{ url_for('contact') }}">
+                <div>
+                    <h2>CONTACT</h2>
+                    <p>Click this to go to the Contact page.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 d-flex align-items-center">
+            <img class="img-fluid" src="/static/img/placeholder.jpg">
+        </div>
+    </div>
+</div>
 {% endblock %}

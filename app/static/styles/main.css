@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
-    text-align: center;
     font-family: 'Rubik', sans-serif;
     background-color: #4f4789;
 }
@@ -29,15 +28,15 @@ body {
     HELPFUL LINK:
     CSS Links (w3schools): https://www.w3schools.com/css/css_link.asp
 */
-a:link, a:visited, a:hover, a:active {
+.nav-text:link, .nav-text:visited, .nav-text:hover, .nav-text:active {
     text-decoration: none;
 }
 
-a:link, a:visited, a:active {
+.nav-text:link, .nav-text:visited, .nav-text:active {
     color: #fce762;
 }
 
-a:hover {
+.nav-text:hover {
     color: #FDF3AF;
 }
 
@@ -60,10 +59,15 @@ a:hover {
 
 .title {
     font-size: 100px;
-    margin: 25px;
+    text-align: center;
+    margin: 30px;
     color: #fce762;
 }
 
-p {
-    color: #fffded;
+.light-text {
+    color: #ebebeb;
+}
+
+.dark-text {
+    color: #1f1f1f;
 }
