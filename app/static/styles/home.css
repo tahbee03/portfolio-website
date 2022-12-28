@@ -3,6 +3,16 @@
     margin-bottom: 30px;
     overflow: hidden;
     border-radius: 10px;
+
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+
+.in-view {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .light-block {

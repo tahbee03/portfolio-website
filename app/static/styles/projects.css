@@ -12,16 +12,6 @@
     transform: translateY(50px);
 }
 
-#bio {
-    margin-top: 75px;
-    margin-bottom: 75px;
-}
-
-#pfp {
-    max-width: 60%;
-    border-radius: 50%;
-}
-
 .card-title {
     color: #fce762;
     margin-bottom: 10px;
@@ -42,4 +32,12 @@
 .in-view {
     opacity: 1;
     transform: translateY(0px);
+}
+
+.prj-link {
+    transition: 0.3s;
+}
+
+.prj-link:hover {
+    transform: scale(0.9);
 }
