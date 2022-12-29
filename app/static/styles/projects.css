@@ -35,9 +35,9 @@
 }
 
 .prj-link {
-    transition: 0.3s;
+    text-decoration: none;
 }
 
-.prj-link:hover {
-    transform: scale(0.9);
+.prj-link:hover > .card-title {
+    color: #FDF3AF;
 }

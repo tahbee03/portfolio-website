@@ -18,10 +18,6 @@ def mc():
 def projects():
     return render_template("projects.html")
 
-@app.route("/art")
-def art():
-    return render_template("art.html")
-
 @app.route("/contact")
 def contact():
     return render_template("contact.html")

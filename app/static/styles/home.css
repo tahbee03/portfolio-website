@@ -9,7 +9,6 @@
     transform: translateY(50px);
 }
 
-
 .in-view {
     opacity: 1;
     transform: translateY(0px);
@@ -53,4 +52,10 @@
 .div-link-left > div, .div-link-right > div {
     padding-left: 25px;
     padding-right: 25px;
+}
+
+#contact-img {
+    height: 100%; 
+    margin: auto; 
+    padding: 10px;
 }
