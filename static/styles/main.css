@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #4f4789;
+}
+
+.navbar {
+    padding: 15px;
+    background-color: #201335;
+    box-shadow: 0 2px 4px 0 black;
+}
+
+.nav-text {
+    font-size: 15px;
+    width: fit-content;
+    display: inline;
+}
+
+.loading-text {
+    color: red;
+    background-color: rgb(255, 193, 193);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* 
+    HELPFUL LINK:
+    CSS Links (w3schools): https://www.w3schools.com/css/css_link.asp
+*/
+.nav-text:link, .nav-text:visited, .nav-text:hover, .nav-text:active {
+    text-decoration: none;
+}
+
+.nav-text:link, .nav-text:visited, .nav-text:active {
+    color: #fce762;
+}
+
+.nav-text:hover {
+    color: #FDF3AF;
+}
+
+.home {
+    transition: 0.25s;
+    font-weight: bold;
+}
+
+.home:hover {
+    transform: scale(1.25) rotate(-10deg);
+}
+
+.l1, .l2, .l3, .l4, .l5 {
+    margin-left: 20px;
+}
+
+.l1, .l2, .l3, .l4 {
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 100px;
+    text-align: center;
+    margin: 30px;
+    color: #fce762;
+}
+
+.light-text {
+    color: #ebebeb;
+}
+
+.dark-text {
+    color: #1f1f1f;
+}
