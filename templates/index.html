@@ -5,6 +5,7 @@
         <meta name="description" content="This website is a portfolio of work done by Talike Bennett"/>
         <title>Talike's Portfolio</title>
         <link rel='icon' href='/static/img/code_pfp_circ.png' type='image/x-icon'/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Bootstrap CSS -->
         <link 
@@ -19,16 +20,27 @@
         {% block head %}{% endblock %}
     </head>
     <body>
-        <!-- TODO: Figure out how to implement the collapse button thingy AND keep the nav content on the right -->
         <nav class="navbar sticky-top">
             <div class="container-fluid">
                 <a href="{{ url_for('home') }}" class="nav-text home">Talike's Portfolio</a>
-                <nav class="nav">
+
+                <nav class="nav" id="links">
                     <a href="{{ url_for('about_me') }}" class="nav-text l1">About Me</a>
                     <a href="{{ url_for('mc') }}" class="nav-text l2">Mini Comics</a>
                     <a href="{{ url_for('projects') }}" class="nav-text l3">Projects</a>
-                    <a href="{{ url_for('contact') }}" class="nav-text l5">Contact</a>
+                    <a href="{{ url_for('contact') }}" class="nav-text l4">Contact</a>
                 </nav>
+
+                <div class="dropstart" id="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('about_me') }}" class="nav-text l1">About Me</a></li>
+                        <li><a href="{{ url_for('mc') }}" class="nav-text l2">Mini Comics</a></li>
+                        <li><a href="{{ url_for('projects') }}" class="nav-text l3">Projects</a></li>
+                        <li><a href="{{ url_for('contact') }}" class="nav-text l4">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         {% block content %}{% endblock %}
@@ -39,5 +51,7 @@
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
             crossorigin="anonymous">
         </script>
+
+        <script src="/static/js/main.js"></script>
     </body>
 </html>

@@ -1,6 +1,7 @@
 .container {
     background-color: #201335;
     border-radius: 15px;
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
@@ -29,6 +30,6 @@
 
 .carousel-inner img {
     margin: auto;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
 }

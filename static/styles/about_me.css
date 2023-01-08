@@ -8,6 +8,10 @@
     border-radius: 50%;
 }
 
+.top-sec {
+    padding: 10px;
+}
+
 .card {
     width: 85%;
     background-color: #201335;
