@@ -1,5 +1,5 @@
-.col {
-    padding: 25px;
+.col-md-3.col-12 {
+    padding: 15px;
 }
 
 .popout-icon, .reveal-icon {
