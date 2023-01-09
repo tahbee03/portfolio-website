@@ -10,20 +10,20 @@ enhance my web development skills since I incorporated tools like HTML, CSS,
 and Google Cloud.
 
 ## Project Structure
-```txt
+```
 portfolio-website/
 |-- static/
-|	|-- img/ # images
-|	|	|-- ...
+|   |-- img/ # images
+|   |   |-- ...
 |   |
-|	|-- js/ # JS files
-|	|	|-- ...
+|   |-- js/ # JS files
+|   |   |-- ...
 |   |
 |   |-- styles/ # CSS files
-|		|-- ...
+|       |-- ...
 |
 |-- templates/ # HTML files
-|	|-- ...
+|   |-- ...
 |
 |-- __init__.py # Python file containing Flask app
 |-- .gitignore # stuff to be ignored when committing 
