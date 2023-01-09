@@ -12,6 +12,12 @@
     transform: translateY(50px);
 }
 
+/* Required for fade-in animation */
+.in-view {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 .card-title {
     color: #fce762;
     margin-bottom: 10px;
@@ -27,11 +33,6 @@
 .card-text {
     margin-top: 10px;
     padding: auto;
-}
-
-.in-view {
-    opacity: 1;
-    transform: translateY(0px);
 }
 
 .prj-link {

@@ -1,17 +1,25 @@
+/* Bio */
 #bio {
     margin-top: 75px;
     margin-bottom: 75px;
 }
 
-#pfp {
+#bio-pic {
     max-width: 60%;
     border-radius: 50%;
 }
 
-.top-sec {
-    padding: 10px;
+#bio-desc {
+    padding: 25px;
+    margin: 0px;
 }
 
+.bio-sec {
+    padding: 10px;
+}
+/*******/
+
+/* Education + experiences */
 .card {
     width: 85%;
     background-color: #201335;
@@ -24,6 +32,12 @@
     transition: 0.5s;
     opacity: 0;
     transform: translateY(50px);
+}
+
+/* Required for fade-in animation */
+.in-view {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .card-title {
@@ -51,12 +65,10 @@
     padding: auto;
 }
 
-.in-view {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
 hr {
     border-width: 5px;
     border-color: #201335;
+    width: 85%;
+    margin: auto;
 }
+/***************************/

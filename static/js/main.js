@@ -1,10 +1,11 @@
 /*
-SOURCES:
+HELPFUL RESOURCE(S):
 https://www.w3schools.com/jsref/met_element_remove.asp
 https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
 https://stackoverflow.com/questions/15876964/why-is-my-android-device-width-980px
 */
 
+// Self-defined navbar "collapser" (since Bootstrap was not cooperating)
 window.addEventListener('load', () => {
 
     const links = document.getElementById("links");

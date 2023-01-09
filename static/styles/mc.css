@@ -1,22 +1,22 @@
 .container {
     background-color: #201335;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 25px;
 }
 
-.row, .col-lg-4, .col-12 {
+.col-lg-4.col-12 {
     padding: 15px;
 }
 
 .comic {
     transition: 0.3s;
     max-width: 75%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .comic:hover {
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 .btn {

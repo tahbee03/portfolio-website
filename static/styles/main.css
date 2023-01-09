@@ -6,11 +6,11 @@ body {
     width: 100%;
 }
 
-/* NAVBAR */
+/* Navbar */
 .navbar {
     padding: 15px;
     background-color: #201335;
-    box-shadow: 0 2px 4px 0 black;
+    box-shadow: 0 3px 5px 0 black;
 }
 
 .nav-text {
@@ -20,8 +20,8 @@ body {
 }
 
 /* 
-    HELPFUL LINK:
-    CSS Links (w3schools): https://www.w3schools.com/css/css_link.asp
+HELPFUL RESOURCE(S):
+https://www.w3schools.com/css/css_link.asp
 */
 .nav-text:link, .nav-text:visited, .nav-text:hover, .nav-text:active {
     text-decoration: none;
@@ -67,20 +67,23 @@ body {
 
 .dropdown-menu {
     background-color: #201335;
+    box-shadow: 0 3px 5px 0 black;
 }
 /**********/
 
 .title {
     font-size: 4em;
     text-align: center;
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0px 0px 0px; /* Top right bottom left */
     color: #fce762;
 }
 
+/* "White" text */
 .light-text {
     color: #ebebeb;
 }
 
+/* "Black" text */
 .dark-text {
     color: #1f1f1f;
 }

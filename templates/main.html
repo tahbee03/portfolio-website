@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="description" content="This website is a portfolio of work done by Talike Bennett"/>
-        <title>Talike's Portfolio</title>
-        <link rel='icon' href='/static/img/code_pfp_circ.png' type='image/x-icon'/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8"/> <!-- Character encoding -->
+        <meta name="description" content="This website is a portfolio of work done by Talike Bennett"/> <!-- Website description -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Key to responsiveness -->
+        <title>Talike's Portfolio</title> <!-- Website tab title -->
+        <link rel='icon' href='/static/img/code_pfp_circ.png' type='image/x-icon'/> <!-- Website tab icon -->
 
         <!-- Bootstrap CSS -->
         <link 
@@ -15,11 +15,12 @@
             crossorigin="anonymous"
         >
 
-        <link rel="stylesheet" href="/static/styles/main.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+        <link rel="stylesheet" href="/static/styles/main.css"> <!-- Main CSS file -->
+
         {% block head %}{% endblock %}
     </head>
     <body>
+        <!-- Navbar -->
         <nav class="navbar sticky-top">
             <div class="container-fluid">
                 <a href="{{ url_for('home') }}" class="nav-text home">Talike's Portfolio</a>
@@ -43,6 +44,7 @@
                 </div>
             </div>
         </nav>
+
         {% block content %}{% endblock %}
 
         <!-- Bootstrap JS + Popper -->
@@ -52,6 +54,6 @@
             crossorigin="anonymous">
         </script>
 
-        <script src="/static/js/main.js"></script>
+        <script src="/static/js/main.js"></script> <!-- Main JS file -->
     </body>
 </html>

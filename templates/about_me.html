@@ -1,19 +1,20 @@
-{% extends 'index.html' %}
+{% extends 'main.html' %}
 
 {% block head %}
-<link rel="stylesheet" href="/static/styles/about_me.css">
+<link rel="stylesheet" href="/static/styles/about_me.css"> <!-- CSS file for About Me page -->
 {% endblock %}
 
 {% block content %}
 <h1 class="title">ABOUT ME</h1>
 
+<!-- Bio section -->
 <div class="container" id="bio">
     <div class="row">
-        <div class="col-md-6 col-12 d-flex align-items-center justify-content-center top-sec">
-            <img src="/static/img/talike1.jpg" alt="talike" class="img-fluid" id="pfp">
+        <div class="col-md-6 col-12 d-flex align-items-center justify-content-center bio-sec">
+            <img src="/static/img/talike1.jpg" alt="talike" class="img-fluid" id="bio-pic">
         </div>
-        <div class="col-md-6 col-12 text-start d-flex align-items-center top-sec">
-            <p class="light-text">
+        <div class="col-md-6 col-12 text-start d-flex align-items-center bio-sec">
+            <p class="light-text" id="bio-desc">
                 Hello! My name is Talike (pronounced tah-leek), and I am working towards being a full-stack software 
                 engineer. I have dreamed of being a video game developer for years now, but I have decided to work more 
                 towards creating software for both mobile devices and computers. I have experience with a handful of 
@@ -26,6 +27,7 @@
 </div>
 
 <div class="container">
+    <!-- Education section -->
     <div class="card">
         <div class="row">
             <div class="col-md-6 col-12 d-flex align-items-center">
@@ -51,7 +53,7 @@
 
     <hr>
 
-    <!-- TODO: Once database is set up, find a way to store experiences into a table and fetch the content here. -->
+    <!-- Experience 1 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Desktop Support College Assistant</h2>
@@ -68,6 +70,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 2 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Scholarship Recipient / Alumni</h2>
@@ -83,6 +87,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 3 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Web Developer</h2>
@@ -95,6 +101,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 4 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Teaching Assistant</h2>
@@ -111,6 +119,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 5 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Production Engineering Fellow</h2>
@@ -133,6 +143,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 6 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Intern</h2>
@@ -152,6 +164,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 7 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Sprintern</h2>
@@ -168,6 +182,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 8 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">City Seasonal Aide</h2>
@@ -180,6 +196,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 9 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Summer Design Studio Student</h2>
@@ -192,6 +210,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 10 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Next Steps Student</h2>
@@ -207,6 +227,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 11 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Paint Club Student</h2>
@@ -219,6 +241,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Experience 12 -->
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Student</h2>
@@ -236,5 +260,5 @@
     </div>
 </div>
 
-<script src="/static/js/about_me.js"></script>
+<script src="/static/js/about_me.js"></script> <!-- JS file for About Me page -->
 {% endblock %}

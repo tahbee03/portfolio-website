@@ -1,13 +1,14 @@
-{% extends 'index.html' %}
+{% extends 'main.html' %}
 
-{% block head %}
-<link rel="stylesheet" href="/static/styles/home.css">
+{% block head %} 
+<link rel="stylesheet" href="/static/styles/home.css"> <!-- CSS file for Home page -->
 {% endblock %}
 
 {% block content %}
 <h1 class="title">TALIKE BENNETT</h1>
 
 <div class="container">
+    <!-- Block linking to About Me page -->
     <div class="row dark-block">
         <div class="col-6 d-flex align-items-center">
             <a class="div-link-left" href="{{ url_for('about_me') }}">
@@ -21,6 +22,8 @@
             <img class="img-fluid" src="/static/img/talike1.jpg">
         </div>
     </div>
+
+    <!-- Block linking to Mini Comics page -->
     <div class="row light-block">
         <div class="col-6 d-flex align-items-center">
             <img class="img-fluid" src="/static/img/MC1_1.png">
@@ -34,8 +37,10 @@
             </a>
         </div>
     </div>
+
+    <!-- Block linking to Projects page -->
     <div class="row dark-block">
-        <div class="light-text col-6 d-flex align-items-center">
+        <div class="col-6 d-flex align-items-center">
             <a class="div-link-left" href="{{ url_for('projects') }}">
                 <div>
                     <h2>PROJECTS</h2>
@@ -44,11 +49,13 @@
             </a>
         </div>
         <div class="col-6 d-flex align-items-center">
-            <img class="img-fluid" src="/static/img/catch_the_ball.png">
+            <img class="img-fluid" src="/static/img/catch_the_ball.png" id="project-img">
         </div>
     </div>
+
+    <!-- Block linking to Contact page -->
     <div class="row light-block">
-        <div class="col-6 d-flex justify-content-center align-items-center" id="c">
+        <div class="col-6 d-flex justify-content-center align-items-center">
             <img class="img-fluid" src="/static/img/phone.png" id="contact-img">
         </div>
         <div class="dark-text col-6 d-flex align-items-center">
@@ -62,5 +69,5 @@
     </div>
 </div>
 
-<script src="/static/js/home.js"></script>
+<script src="/static/js/home.js"></script> <!-- JS file for Home page -->
 {% endblock %}

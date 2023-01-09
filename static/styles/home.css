@@ -9,6 +9,7 @@
     transform: translateY(50px);
 }
 
+/* Required for fade-in animation */
 .in-view {
     opacity: 1;
     transform: translateY(0px);
@@ -54,6 +55,12 @@
     padding-right: 25px;
 }
 
+/* ...since img-fluid is not working properly for this image */
+#project-img {
+    width: 100%;
+}
+
+/* "Shrinks" the image so the entire icon is visible */
 #contact-img {
     width: 45%;
 }

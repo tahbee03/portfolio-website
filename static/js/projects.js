@@ -1,3 +1,6 @@
+// Content fade-in animation
+// Sources can be found in /static/js/about_me.js
+
 let elements = document.querySelectorAll(".card");
 
 window.addEventListener('load', () => {
@@ -13,7 +16,7 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', () => {
     for(var i = 0; i < elements.length; i++) {
         var elem = elements[i];
-        var dist = elem.getBoundingClientRect().top - window.innerHeight + 50;
+        var dist = elem.getBoundingClientRect().top - window.innerHeight + 25;
 
         if(dist < 0) elem.classList.add("in-view");
         else elem.classList.remove("in-view");
