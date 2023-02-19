@@ -28,29 +28,33 @@
     height: 300px;
 }
 
-.div-link-left {
+.div-link {
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.link-text-left {
     transition: 0.3s;
     color: #ebebeb;
 }
 
-.div-link-left:hover {
-    transform: scale(0.9);
-    color: #ebebeb;
-}
-
-.div-link-right {
-    text-decoration: none;
+.link-text-right {
     transition: 0.3s;
     color: #1f1f1f;
 }
 
-.div-link-right:hover {
+.div-link:hover > .link-text-left {
+    transform: scale(0.9);
+    color: #ebebeb;
+}
+
+.div-link:hover > .link-text-right {
     transform: scale(0.9);
     color: #1f1f1f;
 }
 
-.div-link-left > div, .div-link-right > div {
+.link-text-left, .link-text-right {
     padding-left: 25px;
     padding-right: 25px;
 }
