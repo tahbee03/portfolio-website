@@ -38,6 +38,9 @@
         </div>
         <div class="col-lg-4 col-12">
             <!-- MC 5 -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc5-modal">
+                <img src="/static/img/MC5_1.png" alt="mc5" class="comic">
+            </button>
         </div>
         <div class="col-lg-4 col-12">
             <!-- MC 6 -->
@@ -45,7 +48,11 @@
     </div>
 </div>
 
-<!-- TODO: Find a way to create some kind of modal template instead of writing the same code -->
+<!-- 
+    TODO: Find a way to create some kind of modal template instead of writing the same code.
+    Maybe I can try making API calls to the website itself to fetch the images.
+    (Ex. fetch('https://talikebennett.com/static/img/MC1_1.png'))
+-->
 
 <!-- 
 HELPFUL RESOURCE(S):
@@ -213,6 +220,46 @@ Carousel (w3schools): https://www.w3schools.com/bootstrap5/bootstrap_carousel.ph
                         <span class="carousel-control-prev-icon"></span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#mc4-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MC5 Modal -->
+<div class="modal fade" id="mc5-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+    
+            <div class="modal-body">
+                <!-- MC5 Carousel -->
+                <div class="carousel slide" id="mc5-carousel" data-bs-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mc5-carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#mc5-carousel" data-bs-slide-to="1"></button>
+                    </div>
+                
+                    <!-- Carousel images -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/static/img/MC5_1.png" alt="MC5_1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/img/MC5_2.png" alt="MC5_2" class="d-block w-100">
+                        </div>
+                    </div>
+                
+                    <!-- Carousel left/right icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mc5-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mc5-carousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
