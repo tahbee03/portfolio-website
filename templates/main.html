@@ -2,22 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/> <!-- Character encoding -->
-        <meta name="description" content="This website is a portfolio of work done by Talike Bennett"/> <!-- Website description -->
+        <title>{{ title }}</title> <!-- Website tab title -->
+        <link rel="icon" href="/static/img/site_icon.ico" type="image/x-icon"/> <!-- Website tab icon -->
+        <meta name="description" content="{{ desc }}"/> <!-- Website description -->
         <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Key to responsiveness -->
-        <title>Talike's Portfolio</title> <!-- Website tab title -->
-        <link rel='icon' href='/static/img/site_icon.ico' type='image/x-icon'/> <!-- Website tab icon -->
 
         <!-- Bootstrap CSS -->
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
-            crossorigin="anonymous"
-        >
+            crossorigin="anonymous">
 
         <link rel="stylesheet" href="/static/styles/main.css"> <!-- Main CSS file -->
-
-        {% block head %}{% endblock %}
+        <link rel="stylesheet" href="/static/styles/{{ css }}.css"> <!-- Page-specific CSS file -->
     </head>
     <body>
         <!-- Navbar -->
@@ -55,5 +53,6 @@
         </script>
 
         <script src="/static/js/main.js"></script> <!-- Main JS file -->
+        {% if js %}<script src="/static/js/{{ js }}.js"></script> <!-- Page-specific JS file -->{% endif %}
     </body>
 </html>
