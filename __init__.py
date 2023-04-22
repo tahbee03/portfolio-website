@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for  # Imports flask library and associated tools
+from .mc_count import count
 
 app = Flask(__name__) # Instantiates Flask app
 
@@ -29,7 +30,12 @@ def mc():
         "mc.html", 
         title="Mini Comics", 
         desc="Comics galore!",
-        css="mc")
+        css="mc",
+        js="mc")
+
+@app.route("/mc_list/<num>")
+def mc_list(num):
+    return count(num)
 
 # Projects page
 @app.route("/projects")

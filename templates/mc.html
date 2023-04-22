@@ -8,19 +8,19 @@
     <div class="row">
         <div class="col-lg-4 col-12">
             <!-- MC 1 -->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc1-modal">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc1-btn" onclick="createModal(1)">
                 <img src="/static/img/MC1_1.png" alt="mc1" class="comic">
             </button>
         </div>
         <div class="col-lg-4 col-12">
             <!-- MC 2 -->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc2-modal">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc2-btn" onclick="createModal(2)">
                 <img src="/static/img/MC2_1.png" alt="mc2" class="comic">
             </button>
         </div>
         <div class="col-lg-4 col-12">
             <!-- MC 3 -->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc3-modal">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc3-btn" onclick="createModal(3)">
                 <img src="/static/img/MC3_1.png" alt="mc3" class="comic">
             </button>
         </div>
@@ -28,13 +28,13 @@
     <div class="row">
         <div class="col-lg-4 col-12">
             <!-- MC 4 -->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc4-modal">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc4-btn" onclick="createModal(4)">
                 <img src="/static/img/MC4_1.png" alt="mc4" class="comic">
             </button>
         </div>
         <div class="col-lg-4 col-12">
             <!-- MC 5 -->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc5-modal">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc5-btn" onclick="createModal(5)">
                 <img src="/static/img/MC5_1.png" alt="mc5" class="comic">
             </button>
         </div>
@@ -45,19 +45,13 @@
 </div>
 
 <!-- 
-    TODO: Find a way to create some kind of modal template instead of writing the same code.
-    Maybe I can try making API calls to the website itself to fetch the images.
-    (Ex. fetch('https://talikebennett.com/static/img/MC1_1.png'))
--->
-
-<!-- 
 HELPFUL RESOURCE(S):
 Modal (w3schools): https://www.w3schools.com/bootstrap5/bootstrap_modal.php
 Carousel (w3schools): https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
 -->
 
-<!-- MC1 Modal -->
-<div class="modal fade" id="mc1-modal">
+<!-- MC Modal -->
+<div class="modal fade" id="mc-modal">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -65,197 +59,23 @@ Carousel (w3schools): https://www.w3schools.com/bootstrap5/bootstrap_carousel.ph
             </div>
 
             <div class="modal-body">
-                <!-- MC1 Carousel -->
-                <div class="carousel slide" id="mc1-carousel" data-bs-ride="carousel">
+                <!-- MC Carousel -->
+                <div class="carousel slide" id="mc-carousel" data-bs-ride="carousel">
                     <!-- Carousel indicators -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#mc1-carousel" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#mc1-carousel" data-bs-slide-to="1"></button>
+                    <div class="carousel-indicators" id="indicators">
+                        <!-- NOTE: Insert indicators here with JS -->
                     </div>
 
                     <!-- Carousel images -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/static/img/MC1_1.png" alt="MC1_1" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/img/MC1_2.png" alt="MC1_2" class="d-block w-100">
-                        </div>
+                    <div class="carousel-inner" id="images">
+                        <!-- NOTE: Insert images here with JS -->
                     </div>
                 
                     <!-- Carousel left/right icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mc1-carousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mc-carousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mc1-carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- MC2 Modal -->
-<div class="modal fade" id="mc2-modal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-    
-            <div class="modal-body">
-                <!-- MC2 Carousel -->
-                <div class="carousel slide" id="mc2-carousel" data-bs-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#mc2-carousel" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#mc2-carousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#mc2-carousel" data-bs-slide-to="2"></button>
-                    </div>
-                
-                    <!-- Carousel images -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/static/img/MC2_1.png" alt="MC2_1" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/img/MC2_2.png" alt="MC2_2" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/img/MC2_3.png" alt="MC2_3" class="d-block w-100">
-                        </div>
-                    </div>
-                
-                    <!-- Carousel left/right icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mc2-carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mc2-carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- MC3 Modal -->
-<div class="modal fade" id="mc3-modal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-    
-            <div class="modal-body">
-                <!-- MC3 Carousel -->
-                <div class="carousel slide" id="mc3-carousel" data-bs-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#mc3-carousel" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#mc3-carousel" data-bs-slide-to="1"></button>
-                    </div>
-                
-                    <!-- Carousel images -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/static/img/MC3_1.png" alt="MC3_1" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/img/MC3_2.png" alt="MC3_2" class="d-block w-100">
-                        </div>
-                    </div>
-                
-                    <!-- Carousel left/right icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mc3-carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mc3-carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- MC4 Modal -->
-<div class="modal fade" id="mc4-modal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-    
-            <div class="modal-body">
-                <!-- MC4 Carousel -->
-                <div class="carousel slide" id="mc4-carousel" data-bs-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#mc4-carousel" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#mc4-carousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#mc4-carousel" data-bs-slide-to="2"></button>
-                    </div>
-                
-                    <!-- Carousel images -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/static/img/MC4_1.png" alt="MC4_1" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/img/MC4_2.png" alt="MC4_2" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/img/MC4_3.png" alt="MC4_3" class="d-block w-100">
-                        </div>
-                    </div>
-                
-                    <!-- Carousel left/right icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mc4-carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mc4-carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- MC5 Modal -->
-<div class="modal fade" id="mc5-modal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-    
-            <div class="modal-body">
-                <!-- MC5 Carousel -->
-                <div class="carousel slide" id="mc5-carousel" data-bs-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#mc5-carousel" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#mc5-carousel" data-bs-slide-to="1"></button>
-                    </div>
-                
-                    <!-- Carousel images -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/static/img/MC5_1.png" alt="MC5_1" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/static/img/MC5_2.png" alt="MC5_2" class="d-block w-100">
-                        </div>
-                    </div>
-                
-                    <!-- Carousel left/right icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mc5-carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mc5-carousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#mc-carousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
