@@ -12,21 +12,14 @@ and Google Cloud.
 ## Project Structure
 ```
 portfolio-website/
+|-- func/ # additional Python file(s) to distribute functionality
 |-- static/
 |   |-- img/ # images
-|   |   |-- ...
-|   |
 |   |-- js/ # JS files
-|   |   |-- ...
-|   |
 |   |-- styles/ # CSS files
-|       |-- ...
-|
 |-- templates/ # HTML files
-|   |-- ...
-|
-|-- __init__.py # Python file containing Flask app
-|-- .gitignore # stuff to be ignored when committing 
+|-- .gitignore # stuff to be ignored when committing
+|-- app.py # Python file containing Flask app 
 |-- Dockerfile # defines how to containerize app when deploying
 |-- README.md # documentation
 |-- requirements.txt # dependencies
