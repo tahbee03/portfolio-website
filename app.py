@@ -33,6 +33,7 @@ def mc():
         css="mc",
         js="mc")
 
+# Route to return the number of pictures for a specific comic
 @app.route("/mc_list/<num>")
 def mc_list(num):
     return count(num)
