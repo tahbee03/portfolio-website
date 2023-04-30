@@ -31,8 +31,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
-
 // Flip-and-change animation for bio picture
 
 /*
@@ -50,10 +48,10 @@ picture.addEventListener('click', () => {
 
     setTimeout(() => {
         // Change picture source accordingly
-        if(picture.getAttribute("src") == "/static/img/talike1.jpg") {
+        if(picture.getAttribute("src") == "/static/img/talike7.jpg") {
             picture.src = "/static/img/code_pfp.png";
         } else {
-            picture.src = "/static/img/talike1.jpg";
+            picture.src = "/static/img/talike7.jpg";
         }
         picture.classList.remove("rotated-image"); // Remove class from class list of picture to remove effect 
     }, 500);
@@ -63,5 +61,7 @@ picture.addEventListener('click', () => {
     // that the website "waits" for the transition to finish before changing the picture. Removing
     // the rotated-image class inside of setTimeout() also allows a clean transition back to the
     // original rotation of the picture instead of not showing a transition at all.
+
+    // FIXME: Picture takes a while to change on the first click
 
 })

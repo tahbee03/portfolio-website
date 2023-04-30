@@ -1,8 +1,8 @@
 .container {
-    background-color: #201335;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 25px;
+    box-shadow: 0 5px 5px 0 black; /* h-offset, v-offset, blur, spread, color */
 }
 
 .col-lg-4.col-12 {
@@ -13,6 +13,7 @@
     transition: 0.3s;
     max-width: 75%;
     border-radius: 10px;
+    box-shadow: 0 5px 5px 0 black; /* h-offset, v-offset, blur, spread, color */
 }
 
 .btn:hover > .comic {
@@ -22,10 +23,6 @@
 .btn {
     border-width: 0px;
     padding: 0px;
-}
-
-.modal-body {
-    background-color: #4f4789;
 }
 
 .carousel-inner img {

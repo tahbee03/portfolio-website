@@ -2,14 +2,19 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: #4f4789;
+    background-color: #c2c2c2;
     width: 100%;
+}
+
+.title {
+    font-size: 4em;
+    text-align: center;
+    margin: 30px 0px 0px 0px; /* top, right, bottom, left */
 }
 
 /* Navbar */
 .navbar {
     padding: 15px;
-    background-color: #201335;
     box-shadow: 0 3px 5px 0 black;
 }
 
@@ -28,11 +33,7 @@ https://www.w3schools.com/css/css_link.asp
 }
 
 .nav-text:link, .nav-text:visited, .nav-text:active {
-    color: #fce762;
-}
-
-.nav-text:hover {
-    color: #FDF3AF;
+    color: #ebebeb;
 }
 
 .home {
@@ -46,19 +47,15 @@ https://www.w3schools.com/css/css_link.asp
 
 .l1, .l2, .l3, .l4 {
     margin-left: 20px;
+    transition: 0.25s;
 }
 
 .l1, .l2, .l3 {
     margin-right: 20px;
 }
 
-.btn.dropdown-toggle {
-    background-color: #201335;
-    color: #fce762;
-}
-
-.btn.dropdown-toggle:active {
-    color: #FDF3AF;
+.l1:hover, .l2:hover, .l3:hover, .l4:hover {
+    transform: scale(0.9);
 }
 
 .btn.dropdown-toggle::after {
@@ -66,24 +63,32 @@ https://www.w3schools.com/css/css_link.asp
 }
 
 .dropdown-menu {
-    background-color: #201335;
     box-shadow: 0 3px 5px 0 black;
 }
 /**********/
 
-.title {
-    font-size: 4em;
-    text-align: center;
-    margin: 30px 0px 0px 0px; /* Top right bottom left */
-    color: #fce762;
-}
-
-/* "White" text */
+/* Colors */
 .light-text {
     color: #ebebeb;
 }
 
-/* "Black" text */
 .dark-text {
     color: #1f1f1f;
 }
+
+.imp-text {
+    color: #CC0000;
+}
+
+.semi-light-cont {
+    background-color: #c2c2c2;
+}
+
+.semi-dark-cont {
+    background-color: #3d3d3d;
+}
+
+.imp-cont {
+    background-color: #CC0000;
+}
+/**********/
