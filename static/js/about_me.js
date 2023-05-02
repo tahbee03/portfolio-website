@@ -1,4 +1,16 @@
-// Content fade-in animation
+// Changes the margin of the bio container based on the window width
+function changeBioMargins() {
+    var bioCont = document.getElementById("bio");
+    if(window.innerWidth < 992) { // Bootstrap lg breakpoint (>= 992px)
+        bioCont.style.marginTop = "20px";
+        bioCont.style.marginBottom = "20px";
+    } else {
+        bioCont.style.marginTop = "75px";
+        bioCont.style.marginBottom = "75px";
+    }
+}
+
+// Content fade-in animation + more
 
 /*
 HELPFUL RESOURCE(S):
@@ -12,6 +24,8 @@ https://www.w3schools.com/jsref/prop_element_classlist.asp
 let elements = document.querySelectorAll(".card");
 
 window.addEventListener('load', () => {
+    changeBioMargins();
+
     for(var i = 0; i < elements.length; i++) {
         var elem = elements[i];
         var dist = elem.getBoundingClientRect().top - window.innerHeight + 25;
@@ -30,6 +44,10 @@ window.addEventListener('scroll', () => {
         else elem.classList.remove("in-view");
     }
 });
+
+window.addEventListener('resize', () => {
+    changeBioMargins();
+})
 
 // Flip-and-change animation for bio picture
 
