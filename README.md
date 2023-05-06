@@ -33,6 +33,7 @@ portfolio-website/
 5. Set up a project in Google Cloud and used the Cloud Run service to containerize and deploy the website
 6. Mapped a domain to the hosted website using Google Domains
 7. Set up continuous deployment using the Cloud Build service in Google Cloud
+8. Set up a detailed monitoring system with Google Analytics
 
 NOTE: Links to external resources that were helpful with development can be
 found in select files. They may come in handy for future projects.
