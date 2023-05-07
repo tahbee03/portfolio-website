@@ -50,13 +50,3 @@ async function createModal(num) {
     createIndicators(data);
     createImages(data);
 }
-
-window.addEventListener('load', () => {
-    const modalDialog = document.getElementById('modal-dialog');
-    (window.innerWidth < 992) ? modalDialog.style.maxWidth = "90%" : modalDialog.style.maxWidth = "65%";
-});
-
-window.addEventListener('resize', () => {
-    const modalDialog = document.getElementById('modal-dialog');
-    (window.innerWidth < 992) ? modalDialog.style.maxWidth = "90%" : modalDialog.style.maxWidth = "65%";
-});
