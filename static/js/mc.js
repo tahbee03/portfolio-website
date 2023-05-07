@@ -8,6 +8,7 @@ function createIndicators(data) {
         btn.setAttribute("type", "button");
         btn.setAttribute("data-bs-target", "#mc-carousel");
         btn.setAttribute("data-bs-slide-to", `${j - 1}`);
+        btn.style.backgroundColor = "black";
         indicators.appendChild(btn); // Adds each button to the indicator container
     }
     
@@ -49,3 +50,13 @@ async function createModal(num) {
     createIndicators(data);
     createImages(data);
 }
+
+window.addEventListener('load', () => {
+    const modalDialog = document.getElementById('modal-dialog');
+    (window.innerWidth < 992) ? modalDialog.style.maxWidth = "90%" : modalDialog.style.maxWidth = "65%";
+});
+
+window.addEventListener('resize', () => {
+    const modalDialog = document.getElementById('modal-dialog');
+    (window.innerWidth < 992) ? modalDialog.style.maxWidth = "90%" : modalDialog.style.maxWidth = "65%";
+});
