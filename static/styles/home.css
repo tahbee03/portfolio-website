@@ -37,6 +37,10 @@
     transform: scale(0.9);
 }
 
+.img-fluid {
+    border-radius: 20px;
+}
+
 /* ...since img-fluid is not working properly for this image */
 #project-img {
     width: 100%;
@@ -44,5 +48,5 @@
 
 /* "Shrinks" the image so the entire icon is visible */
 #contact-img {
-    width: 45%;
+    max-height: 90%;
 }

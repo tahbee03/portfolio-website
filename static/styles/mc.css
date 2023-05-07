@@ -36,6 +36,7 @@
 
 .modal-dialog {
     max-width: 50%;
+    margin: auto;
 }
 
 .modal-arrow {
