@@ -11,12 +11,19 @@
             gtag('config', 'G-SHXCSW3837');
         </script>
 
+        <!-- Default meta tags -->
         <meta charset="UTF-8"/> <!-- Character encoding -->
         <title>{{ title }}</title> <!-- Website tab title -->
-        <meta property="og:image" content="{{ page_img }}"/>
         <link rel="icon" href="/static/img/site_icon.ico" type="image/x-icon"/> <!-- Website tab icon -->
         <meta name="description" content="{{ desc }}"/> <!-- Website description -->
         <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Key to responsiveness -->
+
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ request.url }}" />
+        <meta property="og:description" content="{{ desc }}" />
+        <meta property="og:image" content="{{ page_img }}"/>
 
         <!-- Bootstrap CSS -->
         <link 

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for  # Imports flask library and associated tools
+from flask import Flask, render_template, url_for, request  # Imports flask library and associated tools
 from func.mc_count import count
 
 app = Flask(__name__) # Instantiates Flask app
