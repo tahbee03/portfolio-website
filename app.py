@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for  # Imports flask library and a
 from func.mc_count import count
 
 app = Flask(__name__) # Instantiates Flask app
+img_dir = "https://talikebennett/static/img/" # Directory to image folder (since using relative paths for the Open Graph image preview doesn't work)
 
 # Home page
 @app.route("/")
@@ -12,7 +13,7 @@ def home():
         desc="This website is a portfolio of work done by me",
         css="home",
         js="home",
-        page_img="/static/img/talike5.jpg")
+        page_img=f"{img_dir}talike5.jpg")
 
 # About Me page
 @app.route("/about-me")
@@ -23,7 +24,7 @@ def about_me():
         desc="A little bit about me, my education, and my extracurricular experience",
         css="about_me",
         js="about_me",
-        page_img="/static/img/talike7.jpg")
+        page_img=f"{img_dir}talike7.jpg")
 
 # Mini Comics page
 @app.route("/mini-comics")
@@ -34,7 +35,7 @@ def mc():
         desc="Comics galore!",
         css="mc",
         js="mc",
-        page_img="/static/img/MC1_1.png")
+        page_img=f"{img_dir}MC1_1.png")
 
 # Route to return the number of pictures for a specific comic
 @app.route("/mc_list/<num>")
@@ -50,7 +51,7 @@ def projects():
         desc="A list of my best projects over the years",
         css="projects",
         js="projects",
-        page_img="/static/img/catch_the_ball.png")
+        page_img=f"{img_dir}catch_the_ball.png")
 
 # Contact page
 @app.route("/contact")
@@ -60,7 +61,7 @@ def contact():
         title="Contact", 
         desc="All of my social media",
         css="contact",
-        page_img="/static/img/phone.png")
+        page_img=f"{img_dir}phone.png")
 
 # Runs Flask app
 if __name__ == "__main__":
