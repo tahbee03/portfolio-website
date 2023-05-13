@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for  # Imports flask library and a
 from func.mc_count import count
 
 app = Flask(__name__) # Instantiates Flask app
-img_dir = "https://talikebennett/static/img/" # Directory to image folder (since using relative paths for the Open Graph image preview doesn't work)
+img_dir = "https://talikebennett.com/static/img/" # Directory to image folder (since using relative paths for the Open Graph image preview doesn't work)
 
 # Home page
 @app.route("/")
