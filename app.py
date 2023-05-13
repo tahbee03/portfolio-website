@@ -11,7 +11,8 @@ def home():
         title="Talike's Portfolio", 
         desc="This website is a portfolio of work done by me",
         css="home",
-        js="home")
+        js="home",
+        page_img="/static/img/talike5.jpg")
 
 # About Me page
 @app.route("/about-me")
@@ -21,7 +22,8 @@ def about_me():
         title="About Me", 
         desc="A little bit about me, my education, and my extracurricular experience",
         css="about_me",
-        js="about_me")
+        js="about_me",
+        page_img="/static/img/talike7.jpg")
 
 # Mini Comics page
 @app.route("/mini-comics")
@@ -31,7 +33,8 @@ def mc():
         title="Mini Comics", 
         desc="Comics galore!",
         css="mc",
-        js="mc")
+        js="mc",
+        page_img="/static/img/MC1_1.png")
 
 # Route to return the number of pictures for a specific comic
 @app.route("/mc_list/<num>")
@@ -46,7 +49,8 @@ def projects():
         title="Projects", 
         desc="A list of my best projects over the years",
         css="projects",
-        js="projects")
+        js="projects",
+        page_img="/static/img/catch_the_ball.png")
 
 # Contact page
 @app.route("/contact")
@@ -55,7 +59,8 @@ def contact():
         "contact.html", 
         title="Contact", 
         desc="All of my social media",
-        css="contact")
+        css="contact",
+        page_img="/static/img/phone.png")
 
 # Runs Flask app
 if __name__ == "__main__":
