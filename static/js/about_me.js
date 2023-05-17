@@ -74,11 +74,13 @@ picture.addEventListener('click', () => {
         picture.classList.remove("rotated-image"); // Remove class from class list of picture to remove effect 
     }, 500);
 
-    // Since the picture's transition is set to 0.5 sec, that means it will take 0.5 sec for the effect
-    // to be applied. Setting the time interval in setTimeout() to the same value gives the illusion
-    // that the website "waits" for the transition to finish before changing the picture. Removing
-    // the rotated-image class inside of setTimeout() also allows a clean transition back to the
-    // original rotation of the picture instead of not showing a transition at all.
+    /*
+    NOTE: Since the picture's transition is set to 0.5 sec, that means it will take 0.5 sec for the effect
+    to be applied. Setting the time interval in setTimeout() to the same value gives the illusion
+    that the website "waits" for the transition to finish before changing the picture. Removing
+    the rotated-image class inside of setTimeout() also allows a clean transition back to the
+    original rotation of the picture instead of not showing a transition at all.
+    */
 
     // FIXME: Picture takes a while to change on the first click
 

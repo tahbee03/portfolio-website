@@ -5,7 +5,6 @@ let elements = document.querySelectorAll(".row");
 
 window.addEventListener('load', () => {
     const pictures = document.querySelectorAll(".img-fluid");
-    console.log(pictures.length);
     if(window.innerWidth < 768) {
         for(let i = 0; i < pictures.length; i++) pictures[i].style.padding = "15px";
     } else {
@@ -33,7 +32,6 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('resize', () => {
     const pictures = document.querySelectorAll(".img-fluid");
-    console.log(pictures.length);
     if(window.innerWidth < 768) {
         for(let i = 0; i < pictures.length; i++) pictures[i].style.padding = "15px";
     } else {

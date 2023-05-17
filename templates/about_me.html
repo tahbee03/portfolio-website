@@ -18,6 +18,11 @@
                 learn in the future) and my problem-solving skills to create and/or improve software that users will find 
                 efficient, visually appealing, and — if applicable — entertaining to engage with.
             </p> 
+            <script>
+                // Apply appropriate class to description on page load
+                if(sessionStorage.mode == "light") document.getElementById("bio-desc").classList.replace("light-text", "dark-text");
+                else document.getElementById("bio-desc").classList.replace("dark-text", "light-text");
+            </script>
         </div>
     </div>
 </div>

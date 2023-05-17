@@ -11,6 +11,11 @@
             gtag('config', 'G-SHXCSW3837');
         </script>
 
+        <script>
+            // Default mode is set to light; restore last used mode otherwise
+            if(!sessionStorage.mode) sessionStorage.mode = "light";
+        </script>
+
         <!-- Default meta tags -->
         <meta charset="UTF-8"/> <!-- Character encoding -->
         <title>{{ title }}</title> <!-- Website tab title -->
@@ -35,11 +40,23 @@
         <link rel="stylesheet" href="/static/styles/main.css"> <!-- Main CSS file -->
         <link rel="stylesheet" href="/static/styles/{{ css }}.css"> <!-- Page-specific CSS file -->
     </head>
-    <body>
+    <body class="semi-light-cont">
+        <script>
+            // Apply appropriate class to body on page load
+            if(sessionStorage.mode == "light") document.querySelector("body").classList.replace("dark-cont", "semi-light-cont");
+            else document.querySelector("body").classList.replace("semi-light-cont", "dark-cont");
+        </script>
         <!-- Navbar -->
         <nav class="navbar sticky-top semi-dark-cont">
             <div class="container-fluid">
                 <a href="{{ url_for('home') }}" class="nav-text home">Talike's Portfolio</a>
+
+                <img src="../static/img/sun_icon.png" alt="dark mode toggler" id="dark-mode-icon"/>
+                <script>
+                    // Apply appropriate src to dark mode icon on page load
+                    if(sessionStorage.mode == "light") document.getElementById("dark-mode-icon").src = "../static/img/sun_icon.png";
+                    else document.getElementById("dark-mode-icon").src = "../static/img/moon_icon.png";
+                </script>
 
                 <nav class="nav" id="links">
                     <a href="{{ url_for('about_me') }}" class="nav-text l1">About Me</a>

@@ -28,7 +28,7 @@ https://www.w3docs.com/snippets/html/how-to-create-mailto-links.html
         <div class="col-md-3 col-12 d-flex align-items-center justify-content-center text-center">
             <div>
                 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968759.png" alt="discord" class="reveal-icon">
-                <p class="dark-text">TDB #8730</p>
+                <p class="dark-text" id="discord-text">TDB #8730</p>
             </div>
         </div>
 
@@ -39,5 +39,19 @@ https://www.w3docs.com/snippets/html/how-to-create-mailto-links.html
             </a>
         </div>
     </div>
+    <script>
+        // Apply appropriate classes to images and text on Contact page on page load
+        if(sessionStorage.mode == "light") {
+            for(let item of document.querySelectorAll(".popout-icon, .reveal-icon")) {
+                item.style.removeProperty("filter");
+            }
+            document.getElementById("discord-text").classList.replace("light-text", "dark-text");
+        } else {
+            for(let item of document.querySelectorAll(".popout-icon, .reveal-icon")) {
+                item.style.filter = "invert(100%)";
+            }
+            document.getElementById("discord-text").classList.replace("dark-text", "light-text");
+        }
+    </script>
 </div>
 {% endblock %}
