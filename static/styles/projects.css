@@ -42,3 +42,7 @@
 .prj-link:hover > .card-title {
     transform: scale(0.9);
 }
+
+.img-fluid {
+    border-radius: 10px;
+}
