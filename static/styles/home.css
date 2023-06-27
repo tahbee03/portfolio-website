@@ -45,8 +45,3 @@
 #project-img {
     width: 100%;
 }
-
-/* "Shrinks" the image so the entire icon is visible */
-#contact-img {
-    max-height: 90%;
-}

@@ -66,21 +66,17 @@ function toggleDarkMode(mode) {
 
     if(mode == "light") {
         body.classList.replace("dark-cont", "semi-light-cont");
-        if(location.pathname == "/about-me") document.getElementById("bio-desc").classList.replace("light-text", "dark-text");
-        if(location.pathname == "/contact") {
-            for(let item of document.querySelectorAll(".popout-icon, .reveal-icon")) {
-                item.style.removeProperty("filter");
-            }
-            document.getElementById("discord-text").classList.replace("light-text", "dark-text");
+        if(location.pathname == "/about-me") {
+            document.getElementById("linked-in-icon").style.removeProperty("filter");
+            document.getElementById("github-icon").style.removeProperty("filter");
+            document.getElementById("bio-desc").classList.replace("light-text", "dark-text");
         }
     } else {
         body.classList.replace("semi-light-cont", "dark-cont");
-        if(location.pathname == "/about-me") document.getElementById("bio-desc").classList.replace("dark-text", "light-text");
-        if(location.pathname == "/contact") {
-            for(let item of document.querySelectorAll(".popout-icon, .reveal-icon")) {
-                item.style.filter = "invert(100%)";
-            }
-            document.getElementById("discord-text").classList.replace("dark-text", "light-text");
+        if(location.pathname == "/about-me") {
+            document.getElementById("linked-in-icon").style.filter = "invert(100%)";
+            document.getElementById("bio-desc").classList.replace("dark-text", "light-text");
+            document.getElementById("github-icon").style.filter = "invert(100%)";
         }
     }
 }

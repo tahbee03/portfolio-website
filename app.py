@@ -53,16 +53,6 @@ def projects():
         js="projects",
         page_img=f"{img_dir}catch_the_ball.png")
 
-# Contact page
-@app.route("/contact")
-def contact():
-    return render_template(
-        "contact.html", 
-        title="Contact", 
-        desc="All of my social media",
-        css="contact",
-        page_img=f"{img_dir}phone.png")
-
 # Runs Flask app
 if __name__ == "__main__":
     app.run(debug=True)

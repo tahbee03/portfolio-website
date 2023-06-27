@@ -8,8 +8,26 @@
     <div class="row">
         <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center bio-sec">
             <img src="/static/img/talike7.jpg" alt="talike" class="img-fluid" id="bio-pic">
+            <div class="social-media-icons">
+                <a href="https://www.linkedin.com/in/talikebennett/" target="_blank" id="linked-in-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png" alt="linkedin">
+                </a>
+                <script>
+                    // Modify icon based on light/dark mode on page load
+                    if(sessionStorage.mode == "light") document.getElementById("linked-in-icon").style.removeProperty("filter");
+                    else document.getElementById("linked-in-icon").style.filter = "invert(100%)";
+                </script>
+                <a href="https://github.com/tahbee03" target="_blank" id="github-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github">
+                </a>
+                <script>
+                    // Modify icon based on light/dark mode on page load
+                    if(sessionStorage.mode == "light") document.getElementById("github-icon").style.removeProperty("filter");
+                    else document.getElementById("github-icon").style.filter = "invert(100%)";
+                </script>
+            </div>
         </div>
-        <div class="col-lg-6 col-12 text-start d-flex align-items-center bio-sec">
+        <div class="col-lg-6 col-12 text-start d-flex align-items-center justify-content-center bio-sec">
             <p class="dark-text" id="bio-desc">
                 Hello! My name is Talike (pronounced tah-leek), and I am working towards being a full-stack software 
                 engineer. I have dreamed of being a video game developer for years now, but I have decided to work more 

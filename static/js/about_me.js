@@ -1,12 +1,19 @@
-// Changes the margin of the bio container based on the window width
-function changeBioMargins() {
+var picture = document.getElementById("bio-pic");
+
+// Changes the size of the elements in the bio container based on the window width
+function resize() {
     var bioCont = document.getElementById("bio");
+    var bioDesc = document.getElementById("bio-desc");
     if(window.innerWidth < 992) { // Bootstrap lg breakpoint (>= 992px)
         bioCont.style.marginTop = "20px";
         bioCont.style.marginBottom = "20px";
+        picture.style.maxWidth = "70%";
+        bioDesc.style.fontSize = "1.25rem";
     } else {
         bioCont.style.marginTop = "75px";
         bioCont.style.marginBottom = "75px";
+        picture.style.maxWidth = "50%";
+        bioDesc.style.fontSize = "1rem";
     }
 }
 
@@ -24,7 +31,7 @@ https://www.w3schools.com/jsref/prop_element_classlist.asp
 let elements = document.querySelectorAll(".card");
 
 window.addEventListener('load', () => {
-    changeBioMargins();
+    resize();
 
     for(var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -46,7 +53,7 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('resize', () => {
-    changeBioMargins();
+    resize();
 })
 
 // Flip-and-change animation for bio picture
@@ -57,8 +64,6 @@ https://stackoverflow.com/questions/19799846/javascript-rotate-img-on-click
 https://stackoverflow.com/questions/7882356/javascript-get-img-src-and-set-as-variable
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY
 */
-
-var picture = document.getElementById("bio-pic");
 
 picture.addEventListener('click', () => {
 

@@ -1,11 +1,10 @@
 /* Bio */
 #bio {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #bio-pic {
-    max-width: 60%;
     border-radius: 50%;
     box-shadow: 0 10px 10px 0 black; /* h-offset, v-offset, blur, spread, color */
     transition: 0.5s;
@@ -15,14 +14,37 @@
     transform: scale(1.1) rotateY(90deg);
 }
 
+.social-media-icons > a {
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.social-media-icons > a:hover {
+    transform: scale(1.2);
+}
+
+.social-media-icons > a > img {
+    width: 50px;
+}
+
+#linked-in-icon {
+    margin-right: 10px;
+}
+
+#github-icon {
+    margin-left: 10px;
+}
+
 #bio-desc {
-    padding: 15px;
+    /* padding: 15px; */
     margin: 0px;
     transition: 0.5s;
 }
 
 .bio-sec {
-    padding: 10px;
+    padding: 20px;
+    flex-direction: column;
 }
 /*******/
 
