@@ -76,11 +76,12 @@
     width: fit-content; /* Needed so that text shrinks on itself rather than towards the center */
 }
 
-.school-link {
+.card-title.school-link > a {
+    color: #CC0000;
     text-decoration: none;
 }
 
-.school-link:hover > .card-title {
+.card-title.school-link:hover {
     transform: scale(0.9);
 }
 
@@ -94,10 +95,17 @@
     padding: auto;
 }
 
-hr {
-    border-width: 5px;
-    border-color: #201335;
+.section-heading {
     width: 85%;
     margin: auto;
+    margin-bottom: -20px;
+}
+
+.section-divider {
+    border-width: 5px;
+    border-color: #CC0000;
+    width: 85%;
+    margin: 10px auto 10px auto;
+    opacity: 0.5;
 }
 /***************************/
