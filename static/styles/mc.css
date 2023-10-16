@@ -49,3 +49,38 @@
     width: 3rem;
     height: 5rem;
 }
+
+.other {
+    border-radius: 10px;
+    background-color: gray;
+    text-decoration: none;
+    max-width: 75%;
+    height: 100%;
+    box-shadow: 0 5px 5px 0 black; /* h-offset, v-offset, blur, spread, color */
+}
+
+.other div {
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.other p {
+    color: black;
+    margin: 0;
+}
+
+.other img {
+    max-width: 25%;
+}
+
+.other * {
+    transition: 0.3s;
+}
+
+.other:hover * {
+    transform: scale(1.1);
+}
