@@ -41,7 +41,23 @@
     border-radius: 20px;
 }
 
+#mc-img {
+    width: 100%;
+}
+
 /* ...since img-fluid is not working properly for this image */
 #project-img {
     width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    #mc-div {
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    #mc-img {
+        width: 50%;
+    }
 }

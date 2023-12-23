@@ -6,7 +6,7 @@ let elements = document.querySelectorAll(".row");
 window.addEventListener('load', () => {
     const pictures = document.querySelectorAll(".img-fluid");
     if(window.innerWidth < 768) {
-        for(let i = 0; i < pictures.length; i++) pictures[i].style.padding = "15px";
+        for(let i = 0; i < pictures.length; i++) pictures[i].style.padding = "10px";
     } else {
         for(let i = 0; i < pictures.length; i++) pictures[i].style.padding = "0px";
     }
@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('resize', () => {
     const pictures = document.querySelectorAll(".img-fluid");
     if(window.innerWidth < 768) {
-        for(let i = 0; i < pictures.length; i++) pictures[i].style.padding = "15px";
+        for(let i = 0; i < pictures.length; i++) pictures[i].style.padding = "10px";
     } else {
         for(let i = 0; i < pictures.length; i++) pictures[i].style.padding = "0px";
     }
