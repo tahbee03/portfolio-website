@@ -1,9 +1,4 @@
 /* Bio */
-#bio {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 #bio-pic {
     border-radius: 50%;
     box-shadow: 0 10px 10px 0 black; /* h-offset, v-offset, blur, spread, color */
@@ -37,7 +32,6 @@
 }
 
 #bio-desc {
-    /* padding: 15px; */
     margin: 0px;
     transition: 0.5s;
 }
@@ -49,18 +43,21 @@
 /*******/
 
 /* Education + experiences */
-.card {
+.card, .expanded-card {
     width: 85%;
     display: block;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto 30px auto;
     padding: 25px;
+    border-radius: 0.375rem;
     box-shadow: 0 5px 5px 0 black; /* h-offset, v-offset, blur, spread, color */
 
     transition: 0.5s;
     opacity: 0;
     transform: translateY(50px);
+}
+
+.expanded-card {
+    border: 1px solid black;
 }
 
 /* Required for fade-in animation */
@@ -69,9 +66,12 @@
     transform: translateY(0px);
 }
 
+.hide {
+    display: none;
+}
+
 .card-title {
     margin-bottom: 10px;
-    font-size: 35px;
     transition: 0.25s;
     width: fit-content; /* Needed so that text shrinks on itself rather than towards the center */
 }
@@ -87,7 +87,6 @@
 
 .card-subtitle {
     font-style: italic;
-    font-size: 25px;
 }
 
 .card-text {
@@ -95,17 +94,18 @@
     padding: auto;
 }
 
-.section-heading {
-    width: 85%;
-    margin: auto;
-    margin-bottom: -20px;
+.section > .row {
+    cursor: pointer;
+    align-items: center;
 }
 
-.section-divider {
-    border-width: 5px;
-    border-color: #CC0000;
-    width: 85%;
-    margin: 10px auto 10px auto;
-    opacity: 0.5;
+.section-heading {
+    margin: 0;
+}
+
+/* ex(pand) col(lapse) icon */
+.excol {
+    filter: invert(100%);
+    transition: 0.5s;
 }
 /***************************/

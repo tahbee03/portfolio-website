@@ -1,20 +1,66 @@
-var picture = document.getElementById("bio-pic");
+const picture = document.getElementById("bio-pic");
+const cards = [...document.querySelectorAll(".card"), ...document.querySelectorAll(".expanded-card")];
 
-// Changes the size of the elements in the bio container based on the window width
+// Changes the size of the elements based on the window width
 function resize() {
-    var bioCont = document.getElementById("bio");
-    var bioDesc = document.getElementById("bio-desc");
-    if(window.innerWidth < 992) { // Bootstrap lg breakpoint (>= 992px)
+    const bioCont = document.getElementById("bio");
+    const bioDesc = document.getElementById("bio-desc");
+    if (window.innerWidth < 992) { // Bootstrap lg breakpoint (>= 992px)
         bioCont.style.marginTop = "20px";
         bioCont.style.marginBottom = "20px";
         picture.style.maxWidth = "70%";
         bioDesc.style.fontSize = "1.25rem";
+        for (const c of cards) c.style.padding = "10px";
     } else {
         bioCont.style.marginTop = "75px";
         bioCont.style.marginBottom = "75px";
         picture.style.maxWidth = "50%";
         bioDesc.style.fontSize = "1rem";
+        for (const c of cards) c.style.padding = "25px";
     }
+}
+
+function excol(section) {
+    const toggler = document.getElementById(`${section}-excol`);
+    const sectionDiv = document.getElementById(`${section}-div`);
+
+    toggler.classList.add("shrunken");
+
+    setTimeout(() => {
+        if (toggler.getAttribute("src") == "/static/img/expand.png") {
+            // Expand content
+            toggler.src = "/static/img/collapse.png";
+            toggler.style.filter = "invert(0%)";
+
+            for (const child of sectionDiv.children) {
+                if ([...child.classList].includes("card")) {
+                    child.classList.remove("hide");
+                }
+            }
+
+            sectionDiv.classList.remove("card");
+            sectionDiv.classList.remove("semi-dark-cont");
+            sectionDiv.classList.add("expanded-card");
+            sectionDiv.classList.add("semi-light-cont");
+        } else {
+            // Collapse content
+            toggler.src = "/static/img/expand.png";
+            toggler.style.filter = "invert(100%)";
+
+            for (const child of sectionDiv.children) {
+                if ([...child.classList].includes("card")) {
+                    child.classList.add("hide");
+                }
+            }
+
+            sectionDiv.classList.add("card");
+            sectionDiv.classList.add("semi-dark-cont");
+            sectionDiv.classList.remove("expanded-card");
+            sectionDiv.classList.remove("semi-light-cont");
+        }
+
+        toggler.classList.remove("shrunken");
+    }, 500);
 }
 
 // Content fade-in animation + more
@@ -28,33 +74,29 @@ https://www.w3schools.com/jsref/prop_win_innerheight.asp
 https://www.w3schools.com/jsref/prop_element_classlist.asp
 */
 
-let elements = document.querySelectorAll(".card");
-
 window.addEventListener('load', () => {
     resize();
 
-    for(var i = 0; i < elements.length; i++) {
-        var elem = elements[i];
-        var dist = elem.getBoundingClientRect().top - window.innerHeight + 25;
+    for (const c of cards) {
+        const dist = c.getBoundingClientRect().top - window.innerHeight + 25;
 
-        if(dist < 0) elem.classList.add("in-view");
-        else elem.classList.remove("in-view");
+        if (dist < 0) c.classList.add("in-view");
+        else c.classList.remove("in-view");
     }
 });
 
 window.addEventListener('scroll', () => {
-    for(var i = 0; i < elements.length; i++) {
-        var elem = elements[i];
-        var dist = elem.getBoundingClientRect().top - window.innerHeight + 25;
+    for (const c of cards) {
+        const dist = c.getBoundingClientRect().top - window.innerHeight + 25;
 
-        if(dist < 0) elem.classList.add("in-view");
-        else elem.classList.remove("in-view");
+        if (dist < 0) c.classList.add("in-view");
+        else c.classList.remove("in-view");
     }
 });
 
 window.addEventListener('resize', () => {
     resize();
-})
+});
 
 // Flip-and-change animation for bio picture
 
@@ -71,7 +113,7 @@ picture.addEventListener('click', () => {
 
     setTimeout(() => {
         // Change picture source accordingly
-        if(picture.getAttribute("src") == "/static/img/talike7.jpg") {
+        if (picture.getAttribute("src") == "/static/img/talike7.jpg") {
             picture.src = "/static/img/code_pfp.png";
         } else {
             picture.src = "/static/img/talike7.jpg";
@@ -89,4 +131,4 @@ picture.addEventListener('click', () => {
 
     // FIXME: Picture takes a while to change on the first click
 
-})
+});
