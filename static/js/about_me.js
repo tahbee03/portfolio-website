@@ -113,10 +113,10 @@ picture.addEventListener('click', () => {
 
     setTimeout(() => {
         // Change picture source accordingly
-        if (picture.getAttribute("src") == "/static/img/talike7.jpg") {
+        if (picture.getAttribute("src") == "/static/img/talike10.jpg") {
             picture.src = "/static/img/code_pfp.png";
         } else {
-            picture.src = "/static/img/talike7.jpg";
+            picture.src = "/static/img/talike10.jpg";
         }
         picture.classList.remove("rotated-image"); // Remove class from class list of picture to remove effect 
     }, 500);
