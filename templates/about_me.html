@@ -14,7 +14,7 @@
                 </a>
                 <script>
                     // Modify icon based on light/dark mode on page load
-                    if(sessionStorage.mode == "light") document.getElementById("linked-in-icon").style.removeProperty("filter");
+                    if (sessionStorage.mode == "light") document.getElementById("linked-in-icon").style.removeProperty("filter");
                     else document.getElementById("linked-in-icon").style.filter = "invert(100%)";
                 </script>
                 <a href="https://github.com/tahbee03" target="_blank" id="github-icon">
@@ -22,21 +22,25 @@
                 </a>
                 <script>
                     // Modify icon based on light/dark mode on page load
-                    if(sessionStorage.mode == "light") document.getElementById("github-icon").style.removeProperty("filter");
+                    if (sessionStorage.mode == "light") document.getElementById("github-icon").style.removeProperty("filter");
                     else document.getElementById("github-icon").style.filter = "invert(100%)";
                 </script>
             </div>
         </div>
         <div class="col-lg-6 col-12 text-start d-flex align-items-center justify-content-center bio-sec">
             <p class="dark-text" id="bio-desc">
-                Hi, my name is Talike (pronounced tah-leek)! I enjoy creating web applications that serve as solutions to real-world 
-                problems while simultaneously incorporating entertainment and minimalism as supporting components. Python, JavaScript, 
-                and React are examples of languages and tools that I have gained proficiency in from working on past projects. As I 
-                continue progressing in my career, my ultimate goal is to be a full-stack web developer with a well-rounded set of tech skills.
-            </p> 
+                Hi, my name is Talike (pronounced tah-leek)! I enjoy creating web applications that serve as solutions
+                to real-world
+                problems while simultaneously incorporating entertainment and minimalism as supporting components.
+                Python, JavaScript,
+                and React are examples of languages and tools that I have gained proficiency in from working on past
+                projects. As I
+                continue progressing in my career, my ultimate goal is to be a full-stack web developer with a
+                well-rounded set of tech skills.
+            </p>
             <script>
                 // Apply appropriate class to description on page load
-                if(sessionStorage.mode == "light") document.getElementById("bio-desc").classList.replace("light-text", "dark-text");
+                if (sessionStorage.mode == "light") document.getElementById("bio-desc").classList.replace("light-text", "dark-text");
                 else document.getElementById("bio-desc").classList.replace("dark-text", "light-text");
             </script>
         </div>
@@ -51,13 +55,7 @@
                 <h2 class="section-heading imp-text">Education</h2>
             </div>
             <div class="col-2">
-                <img 
-                    src="/static/img/expand.png" 
-                    align="right" 
-                    class="excol" 
-                    id="education-excol"
-                    draggable="false"
-                />
+                <img src="/static/img/expand.png" align="right" class="excol" id="education-excol" draggable="false" />
             </div>
         </div>
         <div class="card semi-dark-cont hide">
@@ -84,20 +82,14 @@
         </div>
     </div>
 
-    <!-- Relevant experience section -->
-    <div class="section card semi-dark-cont" id="re-div">
-        <div class="row" onclick="excol('re')">
+    <!-- Experience section -->
+    <div class="section card semi-dark-cont" id="experience-div">
+        <div class="row" onclick="excol('experience')">
             <div class="col-10">
-                <h2 class="section-heading imp-text">Relevant Experience</h2>
+                <h2 class="section-heading imp-text">Experience</h2>
             </div>
             <div class="col-2">
-                <img 
-                    src="/static/img/expand.png" 
-                    align="right" 
-                    class="excol" 
-                    id="re-excol"
-                    draggable="false"
-                />
+                <img src="/static/img/expand.png" align="right" class="excol" id="experience-excol" draggable="false" />
             </div>
         </div>
         <div class="card semi-dark-cont hide">
@@ -107,10 +99,12 @@
                 <h3 class="card-subtitle light-text">September 2022 - Present</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Working in a team of seven to provide digital solutions to clients in the Marshak and CDI buildings
+                        Working in a team of seven to provide digital solutions to clients in the Marshak and CDI
+                        buildings
                     </li>
                     <li>
-                        Maintaining select Windows, Linux, and MacOS systems across campus by installing/updating useful software, 
+                        Maintaining select Windows, Linux, and MacOS systems across campus by installing/updating useful
+                        software,
                         setting up desktops, and imaging computers whenever necessary
                     </li>
                 </ul>
@@ -123,68 +117,16 @@
                 <h3 class="card-subtitle light-text">July 2023 - May 2024</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Selected for a competitive web development fellowship with students from across the 11 CUNY 
-                        senior colleges where Fellows create technical projects using tools such as React, Node.js, 
+                        Selected for a competitive web development fellowship with students from across the 11 CUNY
+                        senior colleges where Fellows create technical projects using tools such as React, Node.js,
                         Express, and PostgreSQL
                     </li>
                     <li>
-                        Participated in weekly courses and learning industry best practices for design, implementation, 
-                        and deployment such as MVC, version control with Git and GitHub, agile and scrum with Trello and 
+                        Participated in weekly courses and learning industry best practices for design, implementation,
+                        and deployment such as MVC, version control with Git and GitHub, agile and scrum with Trello and
                         Slack, TDD, and CI/CD
                     </li>
                 </ul>
-            </div>
-        </div>
-        <div class="card semi-dark-cont hide">
-            <div class="card-body">
-                <h2 class="card-title imp-text">Carella</h2>
-                <h3 class="card-subtitle light-text">Web Developer</h3>
-                <h3 class="card-subtitle light-text">October 2022 - November 2022</h3>
-                <ul class="card-text light-text">
-                    <li>
-                        Used Webflow to develop the website for the organization
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="card semi-dark-cont hide">
-            <div class="card-body">
-                <h2 class="card-title imp-text">Major League Hacking Fellowship</h2>
-                <h3 class="card-subtitle light-text">Production Engineering Fellow</h3>
-                <h3 class="card-subtitle light-text">May 2022 - August 2022</h3>
-                <ul class="card-text light-text">
-                    <li>
-                        Completed 12 weeks of structured curriculum-based learning covering core Meta Production Engineering topics, 
-                        supplemented with events and workshops led by industry experts
-                    </li>
-                    <li>
-                        Created an open-source personal portfolio website using Python, Flask, Jinja, MySQL, and NGINX
-                    </li>
-                    <li>
-                        Automated testing and deployment workflows using CI/CD
-                    </li>
-                    <li>
-                        Set up system and container monitoring, alerting, and visualization using Prometheus and Grafana
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Supporting experience section -->
-    <div class="section card semi-dark-cont" id="se-div">
-        <div class="row" onclick="excol('se')">
-            <div class="col-10">
-                <h2 class="section-heading imp-text">Supporting Experience</h2>
-            </div>
-            <div class="col-2">
-                <img 
-                    src="/static/img/expand.png" 
-                    align="right" 
-                    class="excol" 
-                    id="se-excol"
-                    draggable="false"
-                />
             </div>
         </div>
         <div class="card semi-dark-cont hide">
@@ -197,21 +139,24 @@
                         Received gap scholarship towards college tuition
                     </li>
                     <li>
-                        Occasionally traveled to sites around New York City to help current Publicolor students paint their schools
+                        Occasionally traveled to sites around New York City to help current Publicolor students paint
+                        their schools
                     </li>
                 </ul>
                 <h3 class="card-subtitle light-text">Summer Design Studio Student</h3>
                 <h3 class="card-subtitle light-text">July 2020 - August 2020</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Designed compelling projects with a team of Publicolor students using Gravit and graphic design concepts
+                        Designed compelling projects with a team of Publicolor students using Gravit and graphic design
+                        concepts
                     </li>
                 </ul>
                 <h3 class="card-subtitle light-text">Next Steps Student</h3>
                 <h3 class="card-subtitle light-text">October 2019 - June 2020</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Spent the weekends painting schools in Brooklyn, Manhattan, and Queens with other Publicolor students
+                        Spent the weekends painting schools in Brooklyn, Manhattan, and Queens with other Publicolor
+                        students
                     </li>
                     <li>
                         Attended college and career preparation workshops
@@ -233,11 +178,13 @@
                 <h3 class="card-subtitle light-text">August 2023</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Supported two teachers with a web development course centered around HTML, CSS, JS, and Bootstrap to ensure that about 20 students
+                        Supported two teachers with a web development course centered around HTML, CSS, JS, and
+                        Bootstrap to ensure that about 20 students
                         could build their own functional websites
                     </li>
                     <li>
-                        Met with the entire teaching team in order to discuss highlights throughout our experiences and ways to improve in the future
+                        Met with the entire teaching team in order to discuss highlights throughout our experiences and
+                        ways to improve in the future
                     </li>
                 </ul>
             </div>
@@ -249,14 +196,28 @@
                 <h3 class="card-subtitle light-text">August 2022 - February 2023</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Met with a UMAAN mentee weekly in order to help them set goals and stay motivated throughout the school year
+                        Met with a UMAAN mentee weekly in order to help them set goals and stay motivated throughout the
+                        school year
                     </li>
                 </ul>
                 <h3 class="card-subtitle light-text">Mentee</h3>
                 <h3 class="card-subtitle light-text">August 2020 - May 2021</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Met with a UMAAN mentor weekly in order to discuss goals and stay motivated throughout the school year
+                        Met with a UMAAN mentor weekly in order to discuss goals and stay motivated throughout the
+                        school year
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card semi-dark-cont hide">
+            <div class="card-body">
+                <h2 class="card-title imp-text">Carella</h2>
+                <h3 class="card-subtitle light-text">Web Developer</h3>
+                <h3 class="card-subtitle light-text">October 2022 - November 2022</h3>
+                <ul class="card-text light-text">
+                    <li>
+                        Used Webflow to develop the website for the organization
                     </li>
                 </ul>
             </div>
@@ -268,15 +229,40 @@
                 <h3 class="card-subtitle light-text">August 2022</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Supported two teachers and worked alongside another teaching assistant with a web development course centered around HTML, CSS, 
+                        Supported two teachers and worked alongside another teaching assistant with a web development
+                        course centered around HTML, CSS,
                         JS, and Bootstrap to ensure that about 20 students could build their own functional websites
                     </li>
                     <li>
-                        Met with other teachers and teaching assistants daily to discuss teaching experiences and ways to improve
+                        Met with other teachers and teaching assistants daily to discuss teaching experiences and ways
+                        to improve
                     </li>
                 </ul>
             </div>
-        </div> 
+        </div>
+        <div class="card semi-dark-cont hide">
+            <div class="card-body">
+                <h2 class="card-title imp-text">Major League Hacking Fellowship</h2>
+                <h3 class="card-subtitle light-text">Production Engineering Fellow</h3>
+                <h3 class="card-subtitle light-text">May 2022 - August 2022</h3>
+                <ul class="card-text light-text">
+                    <li>
+                        Completed 12 weeks of structured curriculum-based learning covering core Meta Production
+                        Engineering topics,
+                        supplemented with events and workshops led by industry experts
+                    </li>
+                    <li>
+                        Created an open-source personal portfolio website using Python, Flask, Jinja, MySQL, and NGINX
+                    </li>
+                    <li>
+                        Automated testing and deployment workflows using CI/CD
+                    </li>
+                    <li>
+                        Set up system and container monitoring, alerting, and visualization using Prometheus and Grafana
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="card semi-dark-cont hide">
             <div class="card-body">
                 <h2 class="card-title imp-text">Intern</h2>
@@ -284,13 +270,15 @@
                 <h3 class="card-subtitle light-text">January 2022</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Conducted and presented extensive research in order to learn more about the organization and its global impact
+                        Conducted and presented extensive research in order to learn more about the organization and its
+                        global impact
                     </li>
                     <li>
                         Analyzed demographic trends with 3 team members by designing compelling infographics using Canva
                     </li>
                     <li>
-                        Composed an annual report with a team member by interviewing cybersecurity staff and making use of Microsoft 
+                        Composed an annual report with a team member by interviewing cybersecurity staff and making use
+                        of Microsoft
                         Office products in order to depict the changes in services provided by the UNICC
                     </li>
                 </ul>
@@ -306,7 +294,8 @@
                         Attended professional development workshops, including internship prep and resume building
                     </li>
                     <li>
-                        Matched with the United Nations International Computing Centre (UNICC) to work with the organization for 3 
+                        Matched with the United Nations International Computing Centre (UNICC) to work with the
+                        organization for 3
                         weeks in January 2022
                     </li>
                 </ul>
@@ -331,7 +320,8 @@
                 <h3 class="card-subtitle light-text">September 2016 - November 2019</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Congregated with other students from Brooklyn Academy of Science and the Environment after school weekly in order to help 
+                        Congregated with other students from Brooklyn Academy of Science and the Environment after
+                        school weekly in order to help
                         grow crops and prepare meals with those crops
                     </li>
                 </ul>
@@ -347,7 +337,8 @@
                         Conducted research for a variety of scientific fields, including biology and forensics
                     </li>
                     <li>
-                        Developed a cooling system for a mini television project with a college student using Arduino and Raspberry Pi
+                        Developed a cooling system for a mini television project with a college student using Arduino
+                        and Raspberry Pi
                     </li>
                 </ul>
             </div>
