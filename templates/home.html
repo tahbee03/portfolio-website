@@ -19,23 +19,11 @@
         </div>
     </div>
 
-    <!-- Block linking to Mini Comics page -->
-    <div class="row semi-dark-cont">
-        <div class="col-6 d-flex align-items-center" id="mc-div">
-            <img class="img-fluid" src="/static/img/tpmc_logo.jpg" id="mc-img">
-        </div>
-        <div class="col-6">
-            <a class="div-link d-flex align-items-center" href="{{ url_for('mc') }}">
-                <div class="link-text light-text">
-                    <h2>MINI COMICS</h2>
-                    <p>Click this to go to the Mini Comics page</p>
-                </div>
-            </a>
-        </div>
-    </div>
-
     <!-- Block linking to Projects page -->
     <div class="row semi-dark-cont">
+        <div class="col-6 d-flex align-items-center">
+            <img class="img-fluid" src="/static/img/itz.png" id="project-img">
+        </div>
         <div class="col-6">
             <a class="div-link d-flex align-items-center" href="{{ url_for('projects') }}">
                 <div class="link-text light-text">
@@ -44,8 +32,20 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 d-flex align-items-center">
-            <img class="img-fluid" src="/static/img/itz.png" id="project-img">
+    </div>
+
+    <!-- Block linking to Mini Comics page -->
+    <div class="row semi-dark-cont">
+        <div class="col-6">
+            <a class="div-link d-flex align-items-center" href="{{ url_for('mc') }}">
+                <div class="link-text light-text">
+                    <h2>MINI COMICS</h2>
+                    <p>Click this to go to the Mini Comics page</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 d-flex align-items-center" id="mc-div">
+            <img class="img-fluid" src="/static/img/tpmc_logo.png" id="mc-img">
         </div>
     </div>
 </div>

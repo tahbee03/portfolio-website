@@ -35,7 +35,7 @@ def mc():
         desc="Comics galore!",
         css="mc",
         js="mc",
-        page_img=f"{img_dir}tpmc_logo.jpg")
+        page_img=f"{img_dir}tpmc_logo.png")
 
 # Route to return the number of pictures for a specific comic
 @app.route("/mc_list/<num>")

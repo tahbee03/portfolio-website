@@ -48,11 +48,11 @@ https://www.w3schools.com/css/css_link.asp
     align-items: center;
 }
 
-.l1, .l2, .l3, .l4 {
+.l1, .l2, .l3 {
     margin-left: 20px;
     transition: 0.25s;
 }
-.l1:hover, .l2:hover, .l3:hover, .l4:hover {
+.l1:hover, .l2:hover, .l3:hover {
     transform: scale(0.9);
 }
 
