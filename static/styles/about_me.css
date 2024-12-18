@@ -3,6 +3,7 @@
     border-radius: 50%;
     box-shadow: 0 10px 10px 0 black; /* h-offset, v-offset, blur, spread, color */
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .rotated-image {
@@ -109,3 +110,21 @@
     transition: 0.5s;
 }
 /***************************/
+
+/* Skills */
+#skills-cont {
+    text-align: center;
+}
+
+#skills-cont > .section-heading {
+    margin-bottom: 25px;
+}
+
+.skill {
+    color: #ebebeb;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+}
+/**********/

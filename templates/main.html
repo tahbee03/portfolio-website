@@ -37,6 +37,9 @@
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
             crossorigin="anonymous">
 
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
         <link rel="stylesheet" href="/static/styles/main.css"> <!-- Main CSS file -->
         <link rel="stylesheet" href="/static/styles/{{ css }}.css"> <!-- Page-specific CSS file -->
     </head>
@@ -65,12 +68,15 @@
                 </nav>
 
                 <div class="dropstart" id="dropdown">
-                    <a class="btn dropdown-toggle light-text semi-dark-cont" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-
+                    <button class="btn light-text semi-dark-cont" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
                     <ul class="dropdown-menu semi-dark-cont">
-                        <li><a href="{{ url_for('about_me') }}" class="nav-text l1">About Me</a></li>
-                        <li><a href="{{ url_for('projects') }}" class="nav-text l2">Projects</a></li>
-                        <li><a href="{{ url_for('mc') }}" class="nav-text l3">Mini Comics</a></li>
+                        <li><h5 class="dropdown-header imp-text">Portfolio Pages</h5></li>
+                        <li><hr class="dropdown-divider"/></li>
+                        <li><a href="{{ url_for('about_me') }}" class="dropdown-text">About Me</a></li>
+                        <li><a href="{{ url_for('projects') }}" class="dropdown-text">Projects</a></li>
+                        <li><a href="{{ url_for('mc') }}" class="dropdown-text">Mini Comics</a></li>
                     </ul>
                 </div>
             </div>

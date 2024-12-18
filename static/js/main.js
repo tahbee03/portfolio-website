@@ -10,7 +10,7 @@ function toggleCollapse() {
     const links = document.getElementById("links");
     const dropdown = document.getElementById("dropdown");
 
-    if(window.innerWidth < 650) { // Window size where nav links seem to almost collide with website name
+    if (window.innerWidth < 650) { // Window size where nav links seem to almost collide with website name
         links.style.display = "none";
         dropdown.style.display = "block";
     } else {
@@ -45,7 +45,7 @@ icon.addEventListener('click', () => {
     icon.classList.add("shrunken");
 
     setTimeout(() => {
-        if(icon.getAttribute("src") == "../static/img/sun_icon.png") {
+        if (icon.getAttribute("src") == "../static/img/sun_icon.png") {
             icon.src = "../static/img/moon_icon.png";
             sessionStorage.mode = "dark";
         } else {
@@ -64,19 +64,31 @@ icon.addEventListener('click', () => {
 function toggleDarkMode(mode) {
     const body = document.querySelector("body");
 
-    if(mode == "light") {
+    if (mode == "light") {
         body.classList.replace("dark-cont", "semi-light-cont");
-        if(location.pathname == "/about-me") {
+        if (location.pathname == "/about-me") {
             document.getElementById("linked-in-icon").style.removeProperty("filter");
             document.getElementById("github-icon").style.removeProperty("filter");
             document.getElementById("bio-desc").classList.replace("light-text", "dark-text");
+
+            const educationDiv = document.getElementById("education-div");
+            if (educationDiv.classList.contains("expanded-card")) educationDiv.classList.replace("dark-cont", "semi-light-cont");
+
+            const experienceDiv = document.getElementById("experience-div");
+            if (experienceDiv.classList.contains("expanded-card")) experienceDiv.classList.replace("dark-cont", "semi-light-cont");
         }
     } else {
         body.classList.replace("semi-light-cont", "dark-cont");
-        if(location.pathname == "/about-me") {
+        if (location.pathname == "/about-me") {
             document.getElementById("linked-in-icon").style.filter = "invert(100%)";
             document.getElementById("bio-desc").classList.replace("dark-text", "light-text");
             document.getElementById("github-icon").style.filter = "invert(100%)";
+
+            const educationDiv = document.getElementById("education-div");
+            if (educationDiv.classList.contains("expanded-card")) educationDiv.classList.replace("semi-light-cont", "dark-cont");
+
+            const experienceDiv = document.getElementById("experience-div");
+            if (experienceDiv.classList.contains("expanded-card")) experienceDiv.classList.replace("semi-light-cont", "dark-cont");
         }
     }
 }

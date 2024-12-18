@@ -41,7 +41,10 @@ function excol(section) {
             sectionDiv.classList.remove("card");
             sectionDiv.classList.remove("semi-dark-cont");
             sectionDiv.classList.add("expanded-card");
-            sectionDiv.classList.add("semi-light-cont");
+
+            // Apply appropriate class to card based on set mode
+            if (sessionStorage.mode == "light") sectionDiv.classList.add("semi-light-cont");
+            else sectionDiv.classList.add("dark-cont");
         } else {
             // Collapse content
             toggler.src = "/static/img/expand.png";
@@ -53,10 +56,13 @@ function excol(section) {
                 }
             }
 
+            // Remove appropriate class from card based on set mode
+            if (sessionStorage.mode == "light") sectionDiv.classList.remove("semi-light-cont");
+            else sectionDiv.classList.remove("dark-cont");
+
+            sectionDiv.classList.remove("expanded-card");
             sectionDiv.classList.add("card");
             sectionDiv.classList.add("semi-dark-cont");
-            sectionDiv.classList.remove("expanded-card");
-            sectionDiv.classList.remove("semi-light-cont");
         }
 
         toggler.classList.remove("shrunken");
@@ -113,10 +119,10 @@ picture.addEventListener('click', () => {
 
     setTimeout(() => {
         // Change picture source accordingly
-        if (picture.getAttribute("src") == "/static/img/talike10.jpg") {
+        if (picture.getAttribute("src") == "/static/img/talike2.jpg") {
             picture.src = "/static/img/code_pfp.png";
         } else {
-            picture.src = "/static/img/talike10.jpg";
+            picture.src = "/static/img/talike2.jpg";
         }
         picture.classList.remove("rotated-image"); // Remove class from class list of picture to remove effect 
     }, 500);

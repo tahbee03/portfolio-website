@@ -13,7 +13,7 @@ def home():
         desc="This website is a portfolio of work done by me",
         css="home",
         js="home",
-        page_img=f"{img_dir}talike9.jpg")
+        page_img=f"{img_dir}talike1.jpg")
 
 # About Me page
 @app.route("/about-me")
@@ -24,7 +24,7 @@ def about_me():
         desc="A little bit about me, my education, and my extracurricular experience",
         css="about_me",
         js="about_me",
-        page_img=f"{img_dir}talike10.jpg")
+        page_img=f"{img_dir}talike2.jpg")
 
 # Mini Comics page
 @app.route("/mini-comics")

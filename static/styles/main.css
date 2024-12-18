@@ -23,15 +23,31 @@ body {
     display: inline;
 }
 
+.dropdown-header {
+    font-size: 1.75em;
+    width: fit-content;
+    display: inline;
+}
+
+.dropdown-text {
+    font-size: 1.5em;
+    width: fit-content;
+    display: inline;
+}
+
 /* 
 HELPFUL RESOURCE(S):
 https://www.w3schools.com/css/css_link.asp
 */
-.nav-text:link, .nav-text:visited, .nav-text:hover, .nav-text:active {
+.nav-text:link, .nav-text:visited, .nav-text:hover, .nav-text:active,
+.dropdown-text:link, .dropdown-text:visited, .dropdown-text:hover, .dropdown-text:active
+{
     text-decoration: none;
 }
 
-.nav-text:link, .nav-text:visited, .nav-text:active {
+.nav-text:link, .nav-text:visited, .nav-text:active,
+.dropdown-text:link, .dropdown-text:visited, .dropdown-text:active
+{
     color: #ebebeb;
 }
 
@@ -56,16 +72,16 @@ https://www.w3schools.com/css/css_link.asp
     transform: scale(0.9);
 }
 
-.btn.dropdown-toggle::after {
-    margin: 0px;
-}
-
 .dropdown-menu {
     box-shadow: 0 3px 5px 0 black;
 }
 .dropdown-menu li > * {
     display: block;
-    margin: auto;
+    margin: 5px auto;
+}
+
+#dropdown i {
+    font-size: 1.5em;
 }
 
 #dark-mode-icon {
