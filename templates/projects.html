@@ -4,8 +4,19 @@
 <h1 class="title imp-text">PROJECTS</h1>
 
 <div class="container">
+    <p class="blurb dark-text" id="projects-blurb">
+        Below is a list of select exemplary projects I have worked on so far. Each project's name contains a link to each respective project if you would like to 
+        view them.
+    </p>
+    <script>
+        // Apply appropriate class to blurb on page load
+        if (sessionStorage.mode == "light") document.getElementById("projects-blurb").classList.replace("light-text", "dark-text");
+        else document.getElementById("projects-blurb").classList.replace("dark-text", "light-text");
+    </script>
+</div>
+<div class="container">
     <!-- Senior Design Project? -->
-
+    
     <!-- CSC 456 Project? -->
 
     <!-- Project 7: GameRank -->

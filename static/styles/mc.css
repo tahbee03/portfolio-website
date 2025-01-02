@@ -1,4 +1,4 @@
-.container {
+.container.semi-dark-cont {
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 25px;
@@ -23,6 +23,11 @@
 .btn {
     border-width: 0px;
     padding: 0px;
+}
+
+.caption {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .modal-dialog {

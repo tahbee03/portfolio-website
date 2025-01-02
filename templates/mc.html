@@ -3,6 +3,16 @@
 {% block content %}
 <h1 class="title imp-text">MINI COMICS</h1>
 
+<div class="container">
+    <p class="blurb dark-text" id="mc-blurb">
+        Fun fact: I create comics in my free time! Only a few are showcased here but you can check out the rest via the link below.
+    </p>
+    <script>
+        // Apply appropriate class to blurb on page load
+        if (sessionStorage.mode == "light") document.getElementById("mc-blurb").classList.replace("light-text", "dark-text");
+        else document.getElementById("mc-blurb").classList.replace("dark-text", "light-text");
+    </script>
+</div>
 <div class="container text-center semi-dark-cont">
     <div class="row">
         <div class="col-lg-4 col-12">
@@ -10,18 +20,21 @@
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc1-btn" onclick="createModal(1)">
                 <img src="/static/img/MC1_1.png" alt="mc1" class="comic">
             </button>
+            <p class="light-text caption">MC1: Scary Texting</p>
         </div>
         <div class="col-lg-4 col-12">
             <!-- MC 2 -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc2-btn" onclick="createModal(2)">
                 <img src="/static/img/MC2_1.png" alt="mc2" class="comic">
             </button>
+            <p class="light-text caption">MC2: My Deepest Secret</p>
         </div>
         <div class="col-lg-4 col-12">
             <!-- MC 3 -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc3-btn" onclick="createModal(3)">
                 <img src="/static/img/MC3_1.png" alt="mc3" class="comic">
             </button>
+            <p class="light-text caption">MC3: Jealousy</p>
         </div>
     </div>
     <div class="row">
@@ -30,12 +43,14 @@
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc4-btn" onclick="createModal(4)">
                 <img src="/static/img/MC4_1.png" alt="mc4" class="comic">
             </button>
+            <p class="light-text caption">MC4: Big Fat WHAT?</p>
         </div>
         <div class="col-lg-4 col-12">
             <!-- MC 5 -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc5-btn" onclick="createModal(5)">
                 <img src="/static/img/MC5_1.png" alt="mc5" class="comic">
             </button>
+            <p class="light-text caption">MC5: Under the Mistletoe</p>
         </div>
         <div class="col-lg-4 col-12">
             <a href="https://linktr.ee/tpminicomics" target="_blank" class="other">
