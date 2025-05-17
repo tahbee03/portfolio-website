@@ -27,11 +27,11 @@ def about_me():
         page_img=f"{img_dir}talike2.jpg")
 
 # Mini Comics page
-@app.route("/mini-comics")
+@app.route("/comics")
 def mc():
     return render_template(
         "mc.html", 
-        title="Mini Comics", 
+        title="Comics", 
         desc="Comics galore!",
         css="mc",
         js="mc",

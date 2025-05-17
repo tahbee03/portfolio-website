@@ -80,7 +80,7 @@ function toggleDarkMode(mode) {
         }
 
         if (location.pathname == "/projects") document.getElementById("projects-blurb").classList.replace("light-text", "dark-text");
-        if (location.pathname == "/mini-comics") document.getElementById("mc-blurb").classList.replace("light-text", "dark-text");
+        if (location.pathname == "/comics") document.getElementById("mc-blurb").classList.replace("light-text", "dark-text");
     } else { // Apply dark mode styles
         body.classList.replace("semi-light-cont", "dark-cont");
 
@@ -97,6 +97,6 @@ function toggleDarkMode(mode) {
         }
 
         if (location.pathname == "/projects") document.getElementById("projects-blurb").classList.replace("dark-text", "light-text");
-        if (location.pathname == "/mini-comics") document.getElementById("mc-blurb").classList.replace("dark-text", "light-text");
+        if (location.pathname == "/comics") document.getElementById("mc-blurb").classList.replace("dark-text", "light-text");
     }
 }
