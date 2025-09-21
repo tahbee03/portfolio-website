@@ -4,3 +4,5 @@ brainstorm.txt
 test*
 palette*
 misc.txt
+.venv
+.vscode

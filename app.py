@@ -1,5 +1,4 @@
 from flask import Flask, render_template, url_for, request  # Imports flask library and associated tools
-from func.mc_count import count
 
 app = Flask(__name__) # Instantiates Flask app
 img_dir = "https://talikebennett.com/static/img/" # Directory to image folder (since using relative paths for the Open Graph image preview doesn't work)
@@ -36,11 +35,6 @@ def mc():
         css="mc",
         js="mc",
         page_img=f"{img_dir}tpmc_logo.png")
-
-# Route to return the number of pictures for a specific comic
-@app.route("/mc_list/<num>")
-def mc_list(num):
-    return count(num)
 
 # Projects page
 @app.route("/projects")

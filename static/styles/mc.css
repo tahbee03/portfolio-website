@@ -36,23 +36,12 @@
     margin: auto;
 }
 
-.modal-content, .modal-body {
-    border-radius: 10px;
-}
-
 .modal-content {
     margin: auto;
 }
 
-.carousel-inner img {
-    margin: auto;
-    border-radius: 10px;
-}
-
-.modal-arrow {
-    background-color: black;
-    width: 3rem;
-    height: 5rem;
+.modal-content, .modal-body, .modal-body > img {
+    border-radius: 25px;
 }
 
 .other {

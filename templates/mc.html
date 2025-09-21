@@ -15,43 +15,44 @@
 </div>
 <div class="container text-center semi-dark-cont">
     <div class="row">
+        <!-- Comic 1 -->
         <div class="col-lg-4 col-12">
-            <!-- MC 1 -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc1-btn" onclick="createModal(1)">
-                <img src="/static/img/MC1_1.png" alt="mc1" class="comic">
+                <img src="/static/img/comic1.png" alt="mc1" class="comic">
             </button>
-            <p class="light-text caption">MC1: Scary Texting</p>
+            <p class="light-text caption">Comic 1: Postponed</p>
         </div>
+        <!-- Comic 2 -->
         <div class="col-lg-4 col-12">
-            <!-- MC 2 -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc2-btn" onclick="createModal(2)">
-                <img src="/static/img/MC2_1.png" alt="mc2" class="comic">
+                <img src="/static/img/comic2.png" alt="mc2" class="comic">
             </button>
-            <p class="light-text caption">MC2: My Deepest Secret</p>
+            <p class="light-text caption">Comic 2: Human Dictionary</p>
         </div>
+        <!-- Comic 3 -->
         <div class="col-lg-4 col-12">
-            <!-- MC 3 -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc3-btn" onclick="createModal(3)">
-                <img src="/static/img/MC3_1.png" alt="mc3" class="comic">
+                <img src="/static/img/comic3.png" alt="mc3" class="comic">
             </button>
-            <p class="light-text caption">MC3: Jealousy</p>
+            <p class="light-text caption">Comic 3: The Distraction</p>
         </div>
     </div>
     <div class="row">
+        <!-- Comic 4 -->
         <div class="col-lg-4 col-12">
-            <!-- MC 4 -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc4-btn" onclick="createModal(4)">
-                <img src="/static/img/MC4_1.png" alt="mc4" class="comic">
+                <img src="/static/img/comic4.png" alt="mc4" class="comic">
             </button>
-            <p class="light-text caption">MC4: Big Fat WHAT?</p>
+            <p class="light-text caption">Comic 4: Code Connoisseur</p>
         </div>
+        <!-- Comic 5 -->
         <div class="col-lg-4 col-12">
-            <!-- MC 5 -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mc-modal" id="mc5-btn" onclick="createModal(5)">
-                <img src="/static/img/MC5_1.png" alt="mc5" class="comic">
+                <img src="/static/img/comic5.png" alt="mc5" class="comic">
             </button>
-            <p class="light-text caption">MC5: Under the Mistletoe</p>
+            <p class="light-text caption">Comic 5: Motivation Tips</p>
         </div>
+        <!-- Logo -->
         <div class="col-lg-4 col-12">
             <a href="https://linktr.ee/tpminicomics" target="_blank" class="other">
                 <div class="other">
@@ -74,30 +75,9 @@ Carousel (w3schools): https://www.w3schools.com/bootstrap5/bootstrap_carousel.ph
     <div class="modal-dialog modal-dialog-centered" id="modal-dialog">
         <div class="modal-content" id="modal-content">
             <div class="modal-body semi-dark-cont" id="modal-body">
-                <!-- MC Carousel -->
-                <div class="carousel slide" id="mc-carousel" data-bs-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <div class="carousel-indicators" id="indicators">
-                        <!-- NOTE: Insert indicators here with JS -->
-                    </div>
-
-                    <!-- Carousel images -->
-                    <div class="carousel-inner" id="images">
-                        <!-- NOTE: Insert images here with JS -->
-                    </div>
-                
-                    <!-- Carousel left/right icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mc-carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon modal-arrow"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mc-carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon modal-arrow"></span>
-                    </button>
-                </div>
+                <!-- NOTE: Insert images here with JS -->
             </div>
         </div>
     </div>
 </div>
 {% endblock %}
-
-<!-- TODO: Add a loading value just in case images take a while to load. -->
