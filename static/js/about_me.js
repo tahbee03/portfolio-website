@@ -4,19 +4,28 @@ const cards = [...document.querySelectorAll(".card"), ...document.querySelectorA
 // Changes the size of the elements based on the window width
 function resize() {
     const bioCont = document.getElementById("bio");
-    const bioDesc = document.getElementById("bio-desc");
     if (window.innerWidth < 992) { // Bootstrap lg breakpoint (>= 992px)
         bioCont.style.marginTop = "20px";
         bioCont.style.marginBottom = "20px";
         picture.style.maxWidth = "70%";
-        bioDesc.style.fontSize = "1.25rem";
-        for (const c of cards) c.style.padding = "10px";
+        document.getElementById("bio-desc").classList.add("text-center");
+        for (const c of cards) {
+            c.style.padding = "10px";
+            c.style.marginTop = "15px";
+            c.style.marginBottom = "15px";
+            c.style.width = "95%";
+        }
     } else {
         bioCont.style.marginTop = "75px";
         bioCont.style.marginBottom = "75px";
         picture.style.maxWidth = "50%";
-        bioDesc.style.fontSize = "1rem";
-        for (const c of cards) c.style.padding = "25px";
+        document.getElementById("bio-desc").classList.remove("text-center");
+        for (const c of cards) {
+            c.style.padding = "25px";
+            c.style.marginTop = "30px";
+            c.style.marginBottom = "30px";
+            c.style.width = "85%";
+        }
     }
 }
 

@@ -70,6 +70,14 @@
 </div>
 
 <div class="container">
+    <br>
+    <p class="dark-text text-center" id="about-me-note">The items below are in descending order based on end date.</p>
+    <script>
+        // Apply appropriate class to description on page load
+        if (sessionStorage.mode == "light") document.getElementById("about-me-note").classList.replace("light-text", "dark-text");
+        else document.getElementById("about-me-note").classList.replace("dark-text", "light-text");
+    </script>
+
     <!-- Education section -->
     <div class="section card semi-dark-cont" id="education-div">
         <div class="row" onclick="excol('education')">
@@ -86,7 +94,7 @@
                     Coursera
                 </h2>
                 <h3 class="card-subtitle light-text">Google IT Support Professional Certificate</h3>
-                <h3 class="card-subtitle light-text">August 2024 - Present</h3>
+                <h3 class="card-subtitle date">August 2024 - Present</h3>
             </div>
         </div>
         <div class="card semi-dark-cont hide">
@@ -97,7 +105,7 @@
                     </a>
                 </h2>
                 <h3 class="card-subtitle light-text">College, B.S. in Computer Science</h3>
-                <h3 class="card-subtitle light-text">August 2020 - May 2024</h3>
+                <h3 class="card-subtitle date">August 2020 - May 2024</h3>
             </div>
         </div>
         <div class="card semi-dark-cont hide">
@@ -108,7 +116,7 @@
                     </a>
                 </h2>
                 <h3 class="card-subtitle light-text">High School</h3>
-                <h3 class="card-subtitle light-text">September 2016 - June 2020</h3>
+                <h3 class="card-subtitle date">September 2016 - June 2020</h3>
             </div>
         </div>
     </div>
@@ -126,28 +134,43 @@
         <div class="card semi-dark-cont hide">
             <div class="card-body">
                 <h2 class="card-title imp-text">The City College of New York</h2>
-                <h3 class="card-subtitle light-text">IT Support Specialist (Division of Science)</h3>
-                <h3 class="card-subtitle light-text">September 2022 - Present</h3>
+                <h3 class="card-subtitle light-text">IT Support Assistant</h3>
+                <h3 class="card-subtitle date">January 2026 - Present</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Taking a customer-centric approach to provide technological solutions and services to about 4 faculty members 
-                        daily in the Marshak Science Building as a team of 5
+                        Providing support for Windows, macOS, and Linux computers, network printers, and licensed software for VIP faculty and staff
+                    </li>
+                    <li>
+                        Assisting manager with assigned tasks and training new employees
+                    </li>
+                    <li>
+                        Contributing to long-term projects including IDF upgrades, asset management, and operating system deployments
+                    </li>
+                </ul>
+                <h3 class="card-subtitle light-text">College Assistant (Science IT)</h3>
+                <h3 class="card-subtitle date">September 2022 - January 2026</h3>
+                <ul class="card-text light-text">
+                    <li>
+                        Taking a customer-centric approach as a team to provide technological solutions and services to staff, faculty, and researchers affiliated with the Division of Science
+                    </li>
+                    <li>
+                        Utilizing the SysAid ticketing system to manage client requests and document troubleshooting resolutions
                     </li>
                     <li>
                         Collaborating with several other IT departments at CCNY to configure networks, install licensed software, and manage user accounts
                     </li>
-                    <li>
-                        Maintaining and troubleshooting devices with Windows, MacOS, and Linux operating systems
-                    </li>
                 </ul>
-                <h3 class="card-subtitle light-text">IT Support Specialist (iMEDIA)</h3>
-                <h3 class="card-subtitle light-text">November 2024 - January 2025</h3>
+                <h3 class="card-subtitle light-text">College Assistant (iMEDIA)</h3>
+                <h3 class="card-subtitle date">November 2024 - January 2025</h3>
                 <ul class="card-text light-text">
                     <li>
-                        Took a customer-centric approach to provide technological solutions and services to the entire City College campus as a team of 12
+                        Worked in a team to provide campus-wide A/V support to staff and faculty
                     </li>
                     <li>
-                        Maintained and troubleshooted devices such as projectors and VIA boxes
+                        Provided users with a method of wireless projection using VIA software and hardware
+                    </li>
+                    <li>
+                        Utilized the WebCheckout web app to monitor loaner reservations made for equipment including Chromebooks, Macbooks, iPads, display cables and adapters, microphones, and chargers
                     </li>
                 </ul>
             </div>
@@ -156,7 +179,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">CUNY Tech Prep</h2>
                 <h3 class="card-subtitle light-text">Web Development Fellow</h3>
-                <h3 class="card-subtitle light-text">July 2023 - May 2024</h3>
+                <h3 class="card-subtitle date">July 2023 - May 2024</h3>
                 <ul class="card-text light-text">
                     <li>
                         Selected for a competitive web development fellowship with students from across the 11 CUNY
@@ -175,7 +198,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">Publicolor</h2>
                 <h3 class="card-subtitle light-text">Scholarship Recipient / Alumni</h3>
-                <h3 class="card-subtitle light-text">August 2020 - May 2024</h3>
+                <h3 class="card-subtitle date">August 2020 - May 2024</h3>
                 <ul class="card-text light-text">
                     <li>
                         Received gap scholarship towards college tuition
@@ -186,7 +209,7 @@
                     </li>
                 </ul>
                 <h3 class="card-subtitle light-text">Summer Design Studio Student</h3>
-                <h3 class="card-subtitle light-text">July 2020 - August 2020</h3>
+                <h3 class="card-subtitle date">July 2020 - August 2020</h3>
                 <ul class="card-text light-text">
                     <li>
                         Designed compelling projects with a team of Publicolor students using Gravit and graphic design
@@ -194,7 +217,7 @@
                     </li>
                 </ul>
                 <h3 class="card-subtitle light-text">Next Steps Student</h3>
-                <h3 class="card-subtitle light-text">October 2019 - June 2020</h3>
+                <h3 class="card-subtitle date">October 2019 - June 2020</h3>
                 <ul class="card-text light-text">
                     <li>
                         Spent the weekends painting schools in Brooklyn, Manhattan, and Queens with other Publicolor
@@ -205,7 +228,7 @@
                     </li>
                 </ul>
                 <h3 class="card-subtitle light-text">Paint Club Student</h3>
-                <h3 class="card-subtitle light-text">April 2019 - June 2019</h3>
+                <h3 class="card-subtitle date">April 2019 - June 2019</h3>
                 <ul class="card-text light-text">
                     <li>
                         Collaborated with other students to paint BASE High School
@@ -217,7 +240,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">Giant Machines</h2>
                 <h3 class="card-subtitle light-text">Teaching Assistant</h3>
-                <h3 class="card-subtitle light-text">August 2023</h3>
+                <h3 class="card-subtitle date">August 2023</h3>
                 <ul class="card-text light-text">
                     <li>
                         Supported two teachers with a web development course centered around HTML, CSS, JS, and
@@ -235,7 +258,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">Urban Mentoring and Achievement Network (UMAAN)</h2>
                 <h3 class="card-subtitle light-text">Mentor</h3>
-                <h3 class="card-subtitle light-text">August 2022 - February 2023</h3>
+                <h3 class="card-subtitle date">August 2022 - February 2023</h3>
                 <ul class="card-text light-text">
                     <li>
                         Met with a UMAAN mentee weekly in order to help them set goals and stay motivated throughout the
@@ -243,7 +266,7 @@
                     </li>
                 </ul>
                 <h3 class="card-subtitle light-text">Mentee</h3>
-                <h3 class="card-subtitle light-text">August 2020 - May 2021</h3>
+                <h3 class="card-subtitle date">August 2020 - May 2021</h3>
                 <ul class="card-text light-text">
                     <li>
                         Met with a UMAAN mentor weekly in order to discuss goals and stay motivated throughout the
@@ -256,7 +279,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">Carella</h2>
                 <h3 class="card-subtitle light-text">Web Developer</h3>
-                <h3 class="card-subtitle light-text">October 2022 - November 2022</h3>
+                <h3 class="card-subtitle date">October 2022 - November 2022</h3>
                 <ul class="card-text light-text">
                     <li>
                         Used Webflow to develop the website for the organization
@@ -268,7 +291,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">Upperline Code</h2>
                 <h3 class="card-subtitle light-text">Teaching Assistant</h3>
-                <h3 class="card-subtitle light-text">August 2022</h3>
+                <h3 class="card-subtitle date">August 2022</h3>
                 <ul class="card-text light-text">
                     <li>
                         Supported two teachers and worked alongside another teaching assistant with a web development
@@ -286,7 +309,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">Major League Hacking Fellowship</h2>
                 <h3 class="card-subtitle light-text">Production Engineering Fellow</h3>
-                <h3 class="card-subtitle light-text">May 2022 - August 2022</h3>
+                <h3 class="card-subtitle date">May 2022 - August 2022</h3>
                 <ul class="card-text light-text">
                     <li>
                         Completed 12 weeks of structured curriculum-based learning covering core Meta Production
@@ -309,7 +332,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">United Nations International Computing Centre (UNICC)</h2>
                 <h3 class="card-subtitle light-text">Intern</h3>
-                <h3 class="card-subtitle light-text">January 2022</h3>
+                <h3 class="card-subtitle date">January 2022</h3>
                 <ul class="card-text light-text">
                     <li>
                         Conducted and presented extensive research in order to learn more about the organization and its
@@ -330,7 +353,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">Break Through Tech</h2>
                 <h3 class="card-subtitle light-text">Sprintern</h3>
-                <h3 class="card-subtitle light-text">October 2021 - January 2022</h3>
+                <h3 class="card-subtitle date">October 2021 - January 2022</h3>
                 <ul class="card-text light-text">
                     <li>
                         Attended professional development workshops, including internship prep and resume building
@@ -347,7 +370,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">NYC Department of Parks & Recreation</h2>
                 <h3 class="card-subtitle light-text">City Seasonal Aide</h3>
-                <h3 class="card-subtitle light-text">June 2021 - August 2021</h3>
+                <h3 class="card-subtitle date">June 2021 - August 2021</h3>
                 <ul class="card-text light-text">
                     <li>
                         Cooperated with a crew of 3-5 workers to clean select parks in Queens, NY
@@ -359,7 +382,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">Brooklyn Botanical Garden</h2>
                 <h3 class="card-subtitle light-text">Garden Crew Member</h3>
-                <h3 class="card-subtitle light-text">September 2016 - November 2019</h3>
+                <h3 class="card-subtitle date">September 2016 - November 2019</h3>
                 <ul class="card-text light-text">
                     <li>
                         Congregated with other students from Brooklyn Academy of Science and the Environment after
@@ -373,7 +396,7 @@
             <div class="card-body">
                 <h2 class="card-title imp-text">College Now: STEM Research Academy at City Tech</h2>
                 <h3 class="card-subtitle light-text">Student</h3>
-                <h3 class="card-subtitle light-text">February 2018 - August 2018</h3>
+                <h3 class="card-subtitle date">February 2018 - August 2018</h3>
                 <ul class="card-text light-text">
                     <li>
                         Conducted research for a variety of scientific fields, including biology and forensics

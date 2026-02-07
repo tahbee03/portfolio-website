@@ -72,7 +72,7 @@
 }
 
 .card-title {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     transition: 0.25s;
     width: fit-content; /* Needed so that text shrinks on itself rather than towards the center */
 }
@@ -88,11 +88,16 @@
 
 .card-subtitle {
     font-style: italic;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #808080;
 }
 
 .card-text {
-    margin-top: 10px;
-    padding: auto;
+    margin: 5px 0px 25px 15px;
+    padding: 0px;
 }
 
 .section > .row {

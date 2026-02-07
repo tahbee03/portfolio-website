@@ -71,6 +71,7 @@ function toggleDarkMode(mode) {
             document.getElementById("linked-in-icon").style.removeProperty("filter");
             document.getElementById("github-icon").style.removeProperty("filter");
             document.getElementById("bio-desc").classList.replace("light-text", "dark-text");
+            document.getElementById("about-me-note").classList.replace("light-text", "dark-text");
 
             const educationDiv = document.getElementById("education-div");
             if (educationDiv.classList.contains("expanded-card")) educationDiv.classList.replace("dark-cont", "semi-light-cont");
@@ -88,6 +89,7 @@ function toggleDarkMode(mode) {
             document.getElementById("linked-in-icon").style.filter = "invert(100%)";
             document.getElementById("github-icon").style.filter = "invert(100%)";
             document.getElementById("bio-desc").classList.replace("dark-text", "light-text");
+            document.getElementById("about-me-note").classList.replace("dark-text", "light-text");
 
             const educationDiv = document.getElementById("education-div");
             if (educationDiv.classList.contains("expanded-card")) educationDiv.classList.replace("semi-light-cont", "dark-cont");
